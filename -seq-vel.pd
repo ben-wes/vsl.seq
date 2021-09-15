@@ -7,137 +7,73 @@
 #X obj 464 565 r \$0-length;
 #X obj 453 598 f, f 2;
 #N canvas -8 -1088 1920 1037 \$0-interface 0;
-#X obj 100 100 hradio 15 1 1 16 4034-radio-sender 4034-radio-receiver
-empty 0 -8 0 10 -262144 -1 -1 0;
-#X obj 100 102 vsl 15 44 0 1 0 0 4034-0-vsl-sender 4034-0-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 101 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
+#X obj 100 100 hradio 15 1 1 8 5346-radio-sender 5346-radio-receiver
+empty 0 -8 0 10 -2752 -1 -1 0;
+#X obj 100 102 vsl 15 44 0 1 0 0 5346-0-vsl-sender 5346-0-vsl-receiver
+empty 0 -9 0 10 -2752 -1 -1 4300 1;
+#X obj 101 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1836 -1836
 0;
-#X obj 101 101 cnv 1 13 47 empty 4034-0-vsl-cnv-receiver empty 20 12
-0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 1 1 empty 5346-0-vsl-cnv-receiver empty 20 12
+0 14 -2752 -2752 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 115 102 vsl 15 44 0 1 0 0 4034-1-vsl-sender 4034-1-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 116 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
+#X obj 115 102 vsl 15 44 0 1 0 0 5346-1-vsl-sender 5346-1-vsl-receiver
+empty 0 -9 0 10 -2752 -1 -1 3700 1;
+#X obj 116 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1836 -1836
 0;
-#X obj 116 101 cnv 1 13 47 empty 4034-1-vsl-cnv-receiver empty 20 12
-0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 116 101 cnv 1 13 6 empty 5346-1-vsl-cnv-receiver empty 20 12
+0 14 -2752 -2752 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 130 102 vsl 15 44 0 1 0 0 4034-2-vsl-sender 4034-2-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 131 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
+#X obj 130 102 vsl 15 44 0 1 0 0 5346-2-vsl-sender 5346-2-vsl-receiver
+empty 0 -9 0 10 -2752 -1 -1 1800 1;
+#X obj 131 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1836 -1836
 0;
-#X obj 131 101 cnv 1 13 47 empty 4034-2-vsl-cnv-receiver empty 20 12
-0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 131 101 cnv 1 13 27 empty 5346-2-vsl-cnv-receiver empty 20 12
+0 14 -2752 -2752 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 145 102 vsl 15 44 0 1 0 0 4034-3-vsl-sender 4034-3-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 146 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
+#X obj 145 102 vsl 15 44 0 1 0 0 5346-3-vsl-sender 5346-3-vsl-receiver
+empty 0 -9 0 10 -2752 -1 -1 4300 1;
+#X obj 146 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1836 -1836
 0;
-#X obj 146 101 cnv 1 13 47 empty 4034-3-vsl-cnv-receiver empty 20 12
-0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 146 101 cnv 1 1 1 empty 5346-3-vsl-cnv-receiver empty 20 12
+0 14 -2752 -2752 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 160 102 vsl 15 44 0 1 0 0 4034-4-vsl-sender 4034-4-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 161 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
+#X obj 160 102 vsl 15 44 0 1 0 0 5346-4-vsl-sender 5346-4-vsl-receiver
+empty 0 -9 0 10 -2360 -1 -1 3800 1;
+#X obj 161 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1704 -1704
 0;
-#X obj 161 101 cnv 1 13 47 empty 4034-4-vsl-cnv-receiver empty 20 12
-0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 161 101 cnv 1 13 5 empty 5346-4-vsl-cnv-receiver empty 20 12
+0 14 -2360 -2360 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 175 102 vsl 15 44 0 1 0 0 4034-5-vsl-sender 4034-5-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 176 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
+#X obj 175 102 vsl 15 44 0 1 0 0 5346-5-vsl-sender 5346-5-vsl-receiver
+empty 0 -9 0 10 -2360 -1 -1 3900 1;
+#X obj 176 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1704 -1704
 0;
-#X obj 176 101 cnv 1 13 47 empty 4034-5-vsl-cnv-receiver empty 20 12
-0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 176 101 cnv 1 13 4 empty 5346-5-vsl-cnv-receiver empty 20 12
+0 14 -2360 -2360 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 190 102 vsl 15 44 0 1 0 0 4034-6-vsl-sender 4034-6-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 191 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
+#X obj 190 102 vsl 15 44 0 1 0 0 5346-6-vsl-sender 5346-6-vsl-receiver
+empty 0 -9 0 10 -2360 -1 -1 4100 1;
+#X obj 191 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1704 -1704
 0;
-#X obj 191 101 cnv 1 13 47 empty 4034-6-vsl-cnv-receiver empty 20 12
-0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 191 101 cnv 1 14 2 empty 5346-6-vsl-cnv-receiver empty 20 12
+0 14 -2360 -2360 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 205 102 vsl 15 44 0 1 0 0 4034-7-vsl-sender 4034-7-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 206 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
+#X obj 205 102 vsl 15 44 0 1 0 0 5346-7-vsl-sender 5346-7-vsl-receiver
+empty 0 -9 0 10 -2360 -1 -1 1800 1;
+#X obj 206 101 cnv 13 13 47 empty empty empty 20 12 0 14 -1704 -1704
 0;
-#X obj 206 101 cnv 1 13 47 empty 4034-7-vsl-cnv-receiver empty 20 12
-0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
+#X obj 206 101 cnv 1 13 27 empty 5346-7-vsl-cnv-receiver empty 20 12
+0 14 -2360 -2360 0;
+#X obj 101 101 cnv 1 13 1 empty 5346-vsl-mark-receiver empty 20 12
 0 14 -1 -1 0;
-#X obj 220 102 vsl 15 44 0 1 0 0 4034-8-vsl-sender 4034-8-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 221 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
-0;
-#X obj 221 101 cnv 1 13 47 empty 4034-8-vsl-cnv-receiver empty 20 12
-0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X obj 235 102 vsl 15 44 0 1 0 0 4034-9-vsl-sender 4034-9-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 236 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
-0;
-#X obj 236 101 cnv 1 13 47 empty 4034-9-vsl-cnv-receiver empty 20 12
-0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X obj 250 102 vsl 15 44 0 1 0 0 4034-10-vsl-sender 4034-10-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 251 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
-0;
-#X obj 251 101 cnv 1 13 47 empty 4034-10-vsl-cnv-receiver empty 20
-12 0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X obj 265 102 vsl 15 44 0 1 0 0 4034-11-vsl-sender 4034-11-vsl-receiver
-empty 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 266 101 cnv 13 13 47 empty empty empty 20 12 0 14 -178924 -178924
-0;
-#X obj 266 101 cnv 1 13 47 empty 4034-11-vsl-cnv-receiver empty 20
-12 0 14 -262144 -262144 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X obj 280 102 vsl 15 44 0 1 0 0 4034-12-vsl-sender 4034-12-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 281 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
-0;
-#X obj 281 101 cnv 1 13 47 empty 4034-12-vsl-cnv-receiver empty 20
-12 0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X obj 295 102 vsl 15 44 0 1 0 0 4034-13-vsl-sender 4034-13-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 296 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
-0;
-#X obj 296 101 cnv 1 13 47 empty 4034-13-vsl-cnv-receiver empty 20
-12 0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X obj 310 102 vsl 15 44 0 1 0 0 4034-14-vsl-sender 4034-14-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 311 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
-0;
-#X obj 311 101 cnv 1 13 47 empty 4034-14-vsl-cnv-receiver empty 20
-12 0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X obj 325 102 vsl 15 44 0 1 0 0 4034-15-vsl-sender 4034-15-vsl-receiver
-empty 0 -9 0 10 -228856 -1 -1 0 1;
-#X obj 326 101 cnv 13 13 47 empty empty empty 20 12 0 14 -162280 -162280
-0;
-#X obj 326 101 cnv 1 13 47 empty 4034-15-vsl-cnv-receiver empty 20
-12 0 14 -228856 -228856 0;
-#X obj 101 101 cnv 1 13 1 empty 4034-vsl-mark-receiver empty 20 12
-0 14 -1 -1 0;
-#X coords 0 -1 1 1 240 49 2 100 100;
+#X coords 0 -1 1 1 120 49 2 100 100;
 #X restore 100 100 pd \$0-interface;
 #X text 402 543 save state;
 #X text 249 591 load state;
@@ -798,7 +734,7 @@ empty 20 12 0 14 \$4 \$4 0 \;, f 79;
 #X connect 89 0 90 1;
 #X connect 90 0 74 0;
 #X restore 952 45 pd sliders_to_array_and_canvases;
-#N canvas -125 -1002 1920 1037 handle_input 1;
+#N canvas -125 -1002 1920 1037 handle_input 0;
 #X obj 200 605 % \$1;
 #X obj 243 334 % \$1;
 #X obj 200 640 s \$0-radio-receiver;
@@ -871,7 +807,7 @@ run;
 #X obj 123 213 s pd-\$0-receive;
 #N canvas 0 23 450 300 \$0-receive 0;
 #X obj 100 100 r ;
-#X obj 100 150 s 4034-out;
+#X obj 100 150 s 5346-out;
 #X connect 0 0 1 0;
 #X restore 56 247 pd \$0-receive;
 #X obj 56 108 symbol \$4;
@@ -889,8 +825,8 @@ run;
 #X obj 53 127 r \$0-length;
 #X obj 53 149 pack 16 \$0;
 #N canvas 0 23 450 300 \$0-clone 0;
-#X obj 100 100 r 4034-in;
-#X obj 100 150 clone 16 -seq-vel-helper-ramp.cl;
+#X obj 100 100 r 5346-in;
+#X obj 100 150 clone 8 -seq-vel-helper-ramp.cl;
 #X connect 0 0 1 0;
 #X restore 53 257 pd \$0-clone;
 #X obj 53 206 s pd-\$0-clone;
@@ -907,8 +843,8 @@ run;
 #X obj 53 127 r \$0-length;
 #X obj 53 149 pack 16 \$0;
 #N canvas 0 23 450 300 \$0-clone 0;
-#X obj 100 100 r 4034-in;
-#X obj 100 150 clone 16 -seq-vel-helper-ramp.cl;
+#X obj 100 100 r 5346-in;
+#X obj 100 150 clone 8 -seq-vel-helper-ramp.cl;
 #X connect 0 0 1 0;
 #X restore 53 257 pd \$0-clone;
 #X obj 53 206 s pd-\$0-clone;
@@ -1087,12 +1023,12 @@ run;
 #X text 1444 899 output end of run;
 #X obj 1573 883 r \$0-run-done;
 #X msg 1573 907 run-done;
-#X text 1234 109 TODOS longterm \; raster anzeigen bei unterteilung?
-\; dauer des ersten beats nicht ausgeben? min/max einstellbar? \; start
-ramp to arrive at value in time? change init values with color/length
-messages (and save state?) \; named parameters \;, f 86;
-#X text 702 111 TODOS now \; ramp_modes / non-linear mode? \; init
-tempo with parameter \; set tempo via message \;, f 71;
+#X text 1451 286 TODOS now \; ramp_modes / non-linear mode? \; init
+tempo with parameter \; set tempo via message \; named parameters \;
+, f 47;
+#X text 1451 178 TODOS longterm \; show grid for int-scale \; correct
+handling for duration of first step? \; allow min/max value setting?
+\;, f 47;
 #X connect 0 0 67 0;
 #X connect 2 0 20 1;
 #X connect 2 1 27 0;
@@ -1164,4 +1100,4 @@ tempo with parameter \; set tempo via message \;, f 71;
 #X connect 82 0 33 0;
 #X connect 85 0 86 0;
 #X connect 86 0 33 0;
-#X coords 0 -1 1 1 240 49 2 100 100;
+#X coords 0 -1 1 1 120 49 2 100 100;
