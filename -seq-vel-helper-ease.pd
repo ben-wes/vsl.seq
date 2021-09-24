@@ -11,13 +11,13 @@
 #X obj 379 619 outlet;
 #X obj 453 283 list fromsymbol;
 #X obj 453 307 route list;
-#X obj 453 351 list tosymbol;
-#X text 458 329 check if symbol given;
+#X obj 453 371 list tosymbol;
+#X text 457 328 check if symbol given;
 #X obj 379 141 route float;
 #X text 555 201 default to linear;
 #X msg 690 280 linear;
 #X obj 453 258 symbol linear;
-#N canvas 1228 -967 1294 766 ease-function 1;
+#N canvas 1228 -967 1294 766 ease-function 0;
 #X obj 69 58 inlet;
 #X obj 69 684 outlet;
 #X obj 420 156 expr if($f1 < 0.5 \, 4 * pow($f1 \, 3) \, 1 - pow(-2.0
@@ -118,7 +118,6 @@
 #X msg 690 435 in-expo;
 #X msg 690 357 inout-expo;
 #X msg 690 551 out-elastic;
-#X obj 453 375 print ease-function;
 #X connect 0 0 17 0;
 #X connect 2 0 18 1;
 #X connect 3 0 18 1;
@@ -130,7 +129,6 @@
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
 #X connect 12 0 18 1;
-#X connect 12 0 28 0;
 #X connect 14 0 18 0;
 #X connect 14 1 17 0;
 #X connect 16 0 18 1;
