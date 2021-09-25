@@ -117,8 +117,8 @@ according to the set values for each step. \; values of 0 are skipped.
 #X obj 1 324 cnv 15 1200 2 empty empty empty 20 12 0 14 -249661 -66577
 0;
 #X text 472 756 Behind the upper square of each slider is a bang object
-to switch to this position \; For manipulating values \, click on the
-lower parts of the slider., f 85;
+to switch to this position \; For manipulating values \, drag from
+the lower parts of the slider., f 85;
 #X connect 1 0 28 0;
 #X connect 2 0 28 0;
 #X connect 28 1 82 1;
