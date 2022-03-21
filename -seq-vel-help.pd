@@ -1,4 +1,4 @@
-#N canvas 310 102 1363 812 12;
+#N canvas 251 90 1363 812 12;
 #X obj 1 1 cnv 15 1360 48 empty empty empty 20 12 0 14 #f0f0f0 #404040
 0;
 #X floatatom 27 529 5 0 0 0 - - - 0;
@@ -40,7 +40,7 @@ or in the given order without a key name:, f 106;
 #X text 793 205 symbol, f 14;
 #X text 793 156 sender name, f 14;
 #X text 793 181 6, f 14;
-#X text 1164 65 EXAMPLES;
+#X text 1177 65 EXAMPLES;
 #X text 524 229 rasterizes scale \; outputs integers;
 #X text 26 97 The object accepts positional arguments and named arguments.
 , f 62;
@@ -50,7 +50,7 @@ or in the given order without a key name:, f 106;
 #X obj 27 451 s \$0-receive;
 #X text 668 229 \$0-receive, f 14;
 #X obj 795 260 r \$0-send;
-#X obj 199 451 s \$0-receive;
+#X obj 209 451 s \$0-receive;
 #N canvas 1264 -626 217 348 easings 0;
 #X msg 27 85 inout-cubic;
 #X msg 27 66 inout;
@@ -69,50 +69,50 @@ or in the given order without a key name:, f 106;
 #X msg 27 104 inout-expo;
 #X msg 27 298 out-elastic;
 #X restore 609 483 pd easings;
-#X text 197 372 transition single values;
+#X text 207 372 transition single values;
 #X text 87 399 |pos value(;
-#X msg 199 399 set 1 0 500;
-#X msg 207 424 set 1 1 1000;
+#X msg 209 399 set 1 0 500;
+#X msg 217 424 set 1 1 1000;
 #X text 24 342 INPUTS/OUTPUTS;
 #X msg 125 609 pos-abs 6;
-#X obj 399 451 s \$0-receive;
-#X text 397 372 ease single values;
+#X obj 429 451 s \$0-receive;
+#X text 427 372 ease single values;
 #X text 399 483 See possible ease-modes here:;
-#X msg 407 424 set 1 1 1000 inout-expo;
-#X msg 399 399 set 1 0 500 out;
-#X obj 609 451 s \$0-receive;
+#X msg 437 424 set 1 1 1000 inout-expo;
+#X msg 429 399 set 1 0 500 out;
+#X obj 649 451 s \$0-receive;
 #X floatatom 72 767 2 0 0 0 - - - 0;
 #X text 91 768 left outlet outputs only values >0;
-#X obj 399 606 s \$0-receive;
+#X obj 429 606 s \$0-receive;
 #X text 140 635 right inlet accepts \; "pos-abs" messages only \; to
 easily connect \; 2 modules.;
-#X text 396 527 run through cycle;
-#X msg 399 554 run 500;
-#X obj 399 669 bng 31 250 50 0 empty empty empty 17 7 0 10 #e0c4fc
+#X text 426 527 run through cycle;
+#X msg 429 554 run 500;
+#X obj 429 669 bng 31 250 50 0 empty empty empty 17 7 0 10 #e0c4fc
 #000000 #000000;
-#X obj 399 643 r done;
-#X msg 407 579 run 200 done;
-#X text 461 553 1st param is step duration;
-#X text 504 578 2nd is callback receiver;
-#X obj 712 606 s \$0-receive;
-#X text 852 578 2nd is callback receiver;
-#X text 710 527 stumble through cycle;
-#X msg 712 554 stumble 2000;
-#X text 809 553 1st param is complete cycle duration;
-#X text 709 640 stumble mode will divide the set cycle duration \;
+#X obj 429 643 r done;
+#X msg 437 579 run 200 done;
+#X text 491 553 1st param is step duration;
+#X text 534 578 2nd is callback receiver;
+#X obj 752 606 s \$0-receive;
+#X text 892 578 2nd is callback receiver;
+#X text 750 527 stumble through cycle;
+#X msg 752 554 stumble 2000;
+#X text 849 553 1st param is complete cycle duration;
+#X text 749 640 stumble mode will divide the set cycle duration \;
 according to the set values for each step. \; values of 0 are skipped.
 ;
-#X text 439 669 See callback \; after run or stumble here.;
-#X msg 720 579 stumble 1000 done;
+#X text 469 669 See callback \; after run or stumble here.;
+#X msg 760 579 stumble 1000 done;
 #X msg 58 583 reset;
 #X obj 72 694 -seq-vel 4 height=4 color=324 grid=4;
 #A saved 0.254237 0.966102 0 1;
-#X msg 617 424 0.6 0.2 0.5 0.4 0.3 0.8 0.9 0;
-#X text 607 372 transition all values (ease is optional);
-#X msg 609 399 0.1 0.2 0.4 0.6 0.8 0.9 1 2000 out-bounce;
+#X msg 657 424 0.6 0.2 0.5 0.4 0.3 0.8 0.9 0;
+#X text 647 372 transition all values (ease is optional);
+#X msg 649 399 0.1 0.2 0.4 0.6 0.8 0.9 1 2000 out-bounce;
 #X obj 1 324 cnv 1 1360 2 empty empty empty 20 12 0 14 #f0f0f0 #404040
 0;
-#X text 472 756 Behind the upper square of each slider is a bang object
+#X text 471 758 Behind the upper square of each slider is a bang object
 to switch to this position \; For manipulating values \, drag from
 the lower parts of the slider., f 85;
 #N canvas 484 94 938 820 transition_values 0;
@@ -376,7 +376,7 @@ is the "octave" \; - could be any other value \, too \, though.;
 #X connect 81 0 5 0;
 #X connect 85 0 80 0;
 #X connect 89 0 55 2;
-#X restore 1165 135 pd transition_values;
+#X restore 1178 135 pd transition_values;
 #N canvas 440 113 1112 806 stumble_mode 0;
 #X obj 211 26 tgl 31 0 empty empty play 34 15 0 10 #c4fcc4 #000000
 #000000 0 1;
@@ -637,7 +637,7 @@ inout, f 62;
 #X connect 56 0 27 0;
 #X connect 57 0 38 1;
 #X connect 58 0 35 1;
-#X restore 1165 185 pd stumble_mode;
+#X restore 1178 185 pd stumble_mode;
 #N canvas 509 162 871 721 run_mode 0;
 #X obj 65 231 -seq-vel 4 color=259;
 #A saved 0.3 0.4 0.5 0.6;
@@ -783,7 +783,7 @@ inout, f 62;
 #X connect 60 0 51 0;
 #X connect 61 0 56 0;
 #X connect 62 0 36 0;
-#X restore 1165 160 pd run_mode;
+#X restore 1178 160 pd run_mode;
 #N canvas 428 209 955 633 markov 0;
 #X msg 46 126 random;
 #X obj 46 230 -seq-vel 7 color=905 height=4;
@@ -950,7 +950,7 @@ chord and has specified probabilities to reach any other state/chord.
 #X connect 27 0 28 1;
 #X connect 27 0 0 0;
 #X connect 28 0 24 0;
-#X restore 1165 209 pd markov;
+#X restore 1178 209 pd markov;
 #N canvas 344 123 682 575 instrument 0;
 #X text 347 340 play every incoming midi note in new voice;
 #X msg 91 164 1;
@@ -995,11 +995,11 @@ chord and has specified probabilities to reach any other state/chord.
 #X connect 19 1 16 0;
 #X connect 20 0 13 1;
 #X connect 20 0 14 1;
-#X restore 1164 284 pd instrument;
-#X obj 932 424 s \$0-receive;
-#X text 929 372 go to random index;
-#X msg 932 399 random;
-#X text 928 450 will jump to position based \; on weighted value probability.
+#X restore 1178 284 pd instrument;
+#X obj 992 424 s \$0-receive;
+#X text 989 372 go to random index;
+#X msg 992 399 random;
+#X text 988 450 will jump to position based \; on weighted value probability.
 \; can be used for visible markov chains;
 #X text 920 156 partition length;
 #X text 793 229 \$0-send, f 14;
@@ -1067,6 +1067,36 @@ chord and has specified probabilities to reach any other state/chord.
 #X restore 229 284 pd colors;
 #X text 226 229 999 (default white) \; 900 (red) \; lime, f 23;
 #X text 919 229 visualize \; partition groups;
+#X obj 1178 562 -seq-vel 8 color=navy partition=8;
+#A saved 1 0.534884 0.209302 0.0697674 0 0.0232558 0 0;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array \$0-wave 131 float 4;
+#X coords 0 1 130 -1 131 100 1 0 0;
+#X restore 1178 656 graph;
+#X text 1174 527 use as controller;
+#N canvas 480 395 536 340 harmonics 0;
+#X obj 56 32 inlet;
+#X obj 56 60 t b a;
+#X obj 88 106 route 0 1 2 3 4 5 6 7;
+#X msg 88 258 \; \$9-wave sinesum 128 \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8
+\, normalize;
+#X obj 88 189 pack f f f f f f f f \$0;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 1 2 0;
+#X connect 2 0 4 0;
+#X connect 2 1 4 1;
+#X connect 2 2 4 2;
+#X connect 2 3 4 3;
+#X connect 2 4 4 4;
+#X connect 2 5 4 5;
+#X connect 2 6 4 6;
+#X connect 2 7 4 7;
+#X connect 4 0 3 0;
+#X restore 1210 611 pd harmonics;
+#X obj 446 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040
+0;
+#X text 449 766 !;
 #X connect 1 0 26 0;
 #X connect 2 0 26 0;
 #X connect 26 1 78 1;
@@ -1089,3 +1119,4 @@ chord and has specified probabilities to reach any other state/chord.
 #X connect 79 0 57 0;
 #X connect 81 0 57 0;
 #X connect 91 0 89 0;
+#X connect 100 1 103 0;
