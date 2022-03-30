@@ -1,0 +1,10 @@
+#N canvas 1714 -766 394 261 12;
+#X obj 46 42 inlet;
+#X obj 46 123 change -1;
+#X obj 46 99 expr if($f2 > 0 \, int($f1) \, $f1);
+#X obj 46 176 outlet;
+#X obj 260 44 inlet;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 4 0 2 1;

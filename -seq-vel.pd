@@ -1,4 +1,4 @@
-#N canvas 25 10 1851 1001 12;
+#N canvas 17 15 1851 1001 12;
 #X obj 99 20 inlet;
 #X obj 1236 45 namecanvas \$0-this-canvas;
 #X obj 320 497 savestate;
@@ -7,135 +7,135 @@
 #X obj 464 516 r \$0-length;
 #X obj 453 548 f, f 2;
 #N canvas -310 55 1920 1037 \$0-interface 0;
-#X obj 100 100 hradio 15 1 1 16 1003-radio-sender 1003-radio-receiver
+#X obj 100 100 hradio 15 1 1 16 1151-radio-sender 1151-radio-receiver
 empty 0 -8 0 10 #fcfcfc #000000 #000000 0;
-#X obj 100 102 vsl 15 44 0 1 0 0 1003-0-vsl-sender 1003-0-vsl-receiver
+#X obj 100 102 vsl 15 44 0 1 0 0 1151-0-vsl-sender 1151-0-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 101 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 101 101 cnv 1 13 47 empty 1003-0-vsl-cnv-receiver empty 20 12
+#X obj 101 101 cnv 1 13 47 empty 1151-0-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 115 102 vsl 15 44 0 1 0 0 1003-1-vsl-sender 1003-1-vsl-receiver
+#X obj 115 102 vsl 15 44 0 1 0 0 1151-1-vsl-sender 1151-1-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 116 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 116 101 cnv 1 13 47 empty 1003-1-vsl-cnv-receiver empty 20 12
+#X obj 116 101 cnv 1 13 47 empty 1151-1-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 130 102 vsl 15 44 0 1 0 0 1003-2-vsl-sender 1003-2-vsl-receiver
+#X obj 130 102 vsl 15 44 0 1 0 0 1151-2-vsl-sender 1151-2-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 131 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 131 101 cnv 1 13 47 empty 1003-2-vsl-cnv-receiver empty 20 12
+#X obj 131 101 cnv 1 13 47 empty 1151-2-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 145 102 vsl 15 44 0 1 0 0 1003-3-vsl-sender 1003-3-vsl-receiver
+#X obj 145 102 vsl 15 44 0 1 0 0 1151-3-vsl-sender 1151-3-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 146 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 146 101 cnv 1 13 47 empty 1003-3-vsl-cnv-receiver empty 20 12
+#X obj 146 101 cnv 1 13 47 empty 1151-3-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 160 102 vsl 15 44 0 1 0 0 1003-4-vsl-sender 1003-4-vsl-receiver
+#X obj 160 102 vsl 15 44 0 1 0 0 1151-4-vsl-sender 1151-4-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 161 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 161 101 cnv 1 13 47 empty 1003-4-vsl-cnv-receiver empty 20 12
+#X obj 161 101 cnv 1 13 47 empty 1151-4-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 175 102 vsl 15 44 0 1 0 0 1003-5-vsl-sender 1003-5-vsl-receiver
+#X obj 175 102 vsl 15 44 0 1 0 0 1151-5-vsl-sender 1151-5-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 176 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 176 101 cnv 1 13 47 empty 1003-5-vsl-cnv-receiver empty 20 12
+#X obj 176 101 cnv 1 13 47 empty 1151-5-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 190 102 vsl 15 44 0 1 0 0 1003-6-vsl-sender 1003-6-vsl-receiver
+#X obj 190 102 vsl 15 44 0 1 0 0 1151-6-vsl-sender 1151-6-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 191 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 191 101 cnv 1 13 47 empty 1003-6-vsl-cnv-receiver empty 20 12
+#X obj 191 101 cnv 1 13 47 empty 1151-6-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 205 102 vsl 15 44 0 1 0 0 1003-7-vsl-sender 1003-7-vsl-receiver
+#X obj 205 102 vsl 15 44 0 1 0 0 1151-7-vsl-sender 1151-7-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 206 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 206 101 cnv 1 13 47 empty 1003-7-vsl-cnv-receiver empty 20 12
+#X obj 206 101 cnv 1 13 47 empty 1151-7-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 220 102 vsl 15 44 0 1 0 0 1003-8-vsl-sender 1003-8-vsl-receiver
+#X obj 220 102 vsl 15 44 0 1 0 0 1151-8-vsl-sender 1151-8-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 221 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 221 101 cnv 1 13 47 empty 1003-8-vsl-cnv-receiver empty 20 12
+#X obj 221 101 cnv 1 13 47 empty 1151-8-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 235 102 vsl 15 44 0 1 0 0 1003-9-vsl-sender 1003-9-vsl-receiver
+#X obj 235 102 vsl 15 44 0 1 0 0 1151-9-vsl-sender 1151-9-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 236 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 236 101 cnv 1 13 47 empty 1003-9-vsl-cnv-receiver empty 20 12
+#X obj 236 101 cnv 1 13 47 empty 1151-9-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 250 102 vsl 15 44 0 1 0 0 1003-10-vsl-sender 1003-10-vsl-receiver
+#X obj 250 102 vsl 15 44 0 1 0 0 1151-10-vsl-sender 1151-10-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 251 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 251 101 cnv 1 13 47 empty 1003-10-vsl-cnv-receiver empty 20
+#X obj 251 101 cnv 1 13 47 empty 1151-10-vsl-cnv-receiver empty 20
 12 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 265 102 vsl 15 44 0 1 0 0 1003-11-vsl-sender 1003-11-vsl-receiver
+#X obj 265 102 vsl 15 44 0 1 0 0 1151-11-vsl-sender 1151-11-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 266 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 266 101 cnv 1 13 47 empty 1003-11-vsl-cnv-receiver empty 20
+#X obj 266 101 cnv 1 13 47 empty 1151-11-vsl-cnv-receiver empty 20
 12 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 280 102 vsl 15 44 0 1 0 0 1003-12-vsl-sender 1003-12-vsl-receiver
+#X obj 280 102 vsl 15 44 0 1 0 0 1151-12-vsl-sender 1151-12-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 281 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 281 101 cnv 1 13 47 empty 1003-12-vsl-cnv-receiver empty 20
+#X obj 281 101 cnv 1 13 47 empty 1151-12-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 295 102 vsl 15 44 0 1 0 0 1003-13-vsl-sender 1003-13-vsl-receiver
+#X obj 295 102 vsl 15 44 0 1 0 0 1151-13-vsl-sender 1151-13-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 296 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 296 101 cnv 1 13 47 empty 1003-13-vsl-cnv-receiver empty 20
+#X obj 296 101 cnv 1 13 47 empty 1151-13-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 310 102 vsl 15 44 0 1 0 0 1003-14-vsl-sender 1003-14-vsl-receiver
+#X obj 310 102 vsl 15 44 0 1 0 0 1151-14-vsl-sender 1151-14-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 311 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 311 101 cnv 1 13 47 empty 1003-14-vsl-cnv-receiver empty 20
+#X obj 311 101 cnv 1 13 47 empty 1151-14-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 325 102 vsl 15 44 0 1 0 0 1003-15-vsl-sender 1003-15-vsl-receiver
+#X obj 325 102 vsl 15 44 0 1 0 0 1151-15-vsl-sender 1151-15-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 326 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 326 101 cnv 1 13 47 empty 1003-15-vsl-cnv-receiver empty 20
+#X obj 326 101 cnv 1 13 47 empty 1151-15-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 1003-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1151-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
 #X coords 0 -1 1 1 240 49 2 100 100;
 #X restore 100 100 pd \$0-interface;
@@ -883,7 +883,7 @@ if length is multiple of these.;
 #X connect 82 0 78 5;
 #X connect 83 0 82 1;
 #X restore 711 45 pd draw_object;
-#N canvas 213 67 1388 899 sliders_to_array_and_canvases 0;
+#N canvas 83 57 1645 897 sliders_to_array_and_canvases 0;
 #X obj 107 59 r \$0-0-vsl-sender;
 #X obj 118 79 r \$0-1-vsl-sender;
 #X obj 127 99 r \$0-2-vsl-sender;
@@ -948,7 +948,7 @@ if length is multiple of these.;
 #X msg 112 159 \$1 5;
 #X msg 122 179 \$1 6;
 #X msg 132 199 \$1 7;
-#X obj 445 447 array set \$0-seq;
+#X obj 445 515 array set \$0-seq;
 #X obj 806 614 *;
 #X obj 824 557 r \$0-height;
 #X obj 806 770 pack f 13;
@@ -968,7 +968,7 @@ if length is multiple of these.;
 #X obj 847 740 * 13;
 #X obj 886 664 < 3;
 #X obj 847 716 / 2;
-#X obj 1062 447 r \$0-grid;
+#X obj 1048 447 r \$0-grid;
 #X obj 94 811 s \$0-radio-receiver;
 #X msg 62 760 label;
 #X obj 62 626 t b f;
@@ -996,20 +996,29 @@ if length is multiple of these.;
 #X obj 59 78 r \$0-length;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
-#X restore 202 505 pd initialize_transistion_array;
+#X restore 147 515 pd initialize_transistion_array;
 #X obj 101 416 r \$0-slider-transition-check;
 #X obj 427 659 r \$0-grid;
-#X text 361 706 display grid position or only 2 decimal digits;
-#X obj 1223 415 s \$0-edit-value;
+#X obj 1223 592 s \$0-edit-value;
 #X text 1220 387 output edited values;
 #X obj 62 312 t l l l l;
 #X obj 62 218 t l;
 #X obj 312 218 t l;
 #X obj 569 218 t l;
 #X obj 827 218 t l;
+#X obj 1223 415 unpack;
+#X obj 659 443 r \$0-grid;
+#X obj 806 471 expr if($f2 > 0 \, int($f1)/$f2 \, $f1);
+#X obj 445 467 expr if($f2 > 0 \, int($f1) \, $f1);
 #X obj 94 683 expr if($f2 > 0 \, int($f1) \, int($f1 * 100) / 100)
 ;
-#X obj 806 471 expr if($f2 > 0 \, int($f1) / $f2 \, $f1);
+#X text 361 706 display grid position or only 2 decimal digits \; and
+int-value for gridded version;
+#X obj 1223 540 clone 32 -seq-vel-helper-output-edited.cl;
+#X obj 1223 471 swap;
+#X obj 1223 496 pack;
+#X obj 1507 476 r \$0-grid;
+#X msg 1507 500 all \$1;
 #X connect 0 0 32 0;
 #X connect 1 0 57 0;
 #X connect 2 0 58 0;
@@ -1042,38 +1051,38 @@ if length is multiple of these.;
 #X connect 29 0 38 0;
 #X connect 30 0 39 0;
 #X connect 31 0 40 0;
-#X connect 32 0 113 0;
-#X connect 33 0 116 0;
-#X connect 34 0 116 0;
-#X connect 35 0 116 0;
-#X connect 36 0 116 0;
-#X connect 37 0 116 0;
-#X connect 38 0 116 0;
-#X connect 39 0 116 0;
-#X connect 40 0 116 0;
-#X connect 41 0 114 0;
-#X connect 42 0 114 0;
-#X connect 43 0 114 0;
-#X connect 44 0 114 0;
-#X connect 45 0 114 0;
-#X connect 46 0 114 0;
-#X connect 47 0 114 0;
-#X connect 48 0 114 0;
-#X connect 49 0 115 0;
-#X connect 50 0 115 0;
-#X connect 51 0 115 0;
-#X connect 52 0 115 0;
-#X connect 53 0 115 0;
-#X connect 54 0 115 0;
-#X connect 55 0 115 0;
-#X connect 56 0 115 0;
-#X connect 57 0 113 0;
-#X connect 58 0 113 0;
-#X connect 59 0 113 0;
-#X connect 60 0 113 0;
-#X connect 61 0 113 0;
-#X connect 62 0 113 0;
-#X connect 63 0 113 0;
+#X connect 32 0 112 0;
+#X connect 33 0 115 0;
+#X connect 34 0 115 0;
+#X connect 35 0 115 0;
+#X connect 36 0 115 0;
+#X connect 37 0 115 0;
+#X connect 38 0 115 0;
+#X connect 39 0 115 0;
+#X connect 40 0 115 0;
+#X connect 41 0 113 0;
+#X connect 42 0 113 0;
+#X connect 43 0 113 0;
+#X connect 44 0 113 0;
+#X connect 45 0 113 0;
+#X connect 46 0 113 0;
+#X connect 47 0 113 0;
+#X connect 48 0 113 0;
+#X connect 49 0 114 0;
+#X connect 50 0 114 0;
+#X connect 51 0 114 0;
+#X connect 52 0 114 0;
+#X connect 53 0 114 0;
+#X connect 54 0 114 0;
+#X connect 55 0 114 0;
+#X connect 56 0 114 0;
+#X connect 57 0 112 0;
+#X connect 58 0 112 0;
+#X connect 59 0 112 0;
+#X connect 60 0 112 0;
+#X connect 61 0 112 0;
+#X connect 62 0 112 0;
+#X connect 63 0 112 0;
 #X connect 65 0 78 0;
 #X connect 66 0 71 0;
 #X connect 67 0 68 0;
@@ -1081,7 +1090,7 @@ if length is multiple of these.;
 #X connect 69 0 65 0;
 #X connect 70 0 69 0;
 #X connect 71 0 65 1;
-#X connect 73 0 64 0;
+#X connect 73 0 119 0;
 #X connect 73 1 64 1;
 #X connect 74 0 118 0;
 #X connect 74 1 75 0;
@@ -1100,7 +1109,7 @@ if length is multiple of these.;
 #X connect 84 0 118 1;
 #X connect 86 0 85 0;
 #X connect 87 0 98 0;
-#X connect 87 1 117 0;
+#X connect 87 1 120 0;
 #X connect 88 0 85 0;
 #X connect 90 0 87 0;
 #X connect 90 1 96 0;
@@ -1114,17 +1123,27 @@ if length is multiple of these.;
 #X connect 104 0 100 1;
 #X connect 105 0 103 0;
 #X connect 107 0 105 0;
-#X connect 108 0 117 1;
-#X connect 112 0 100 0;
-#X connect 112 1 73 0;
-#X connect 112 2 74 0;
-#X connect 112 3 110 0;
-#X connect 113 0 112 0;
-#X connect 114 0 112 0;
-#X connect 115 0 112 0;
-#X connect 116 0 112 0;
-#X connect 117 0 88 0;
+#X connect 108 0 120 1;
+#X connect 111 0 100 0;
+#X connect 111 1 73 0;
+#X connect 111 2 74 0;
+#X connect 111 3 116 0;
+#X connect 112 0 111 0;
+#X connect 113 0 111 0;
+#X connect 114 0 111 0;
+#X connect 115 0 111 0;
+#X connect 116 0 123 0;
+#X connect 116 1 123 1;
+#X connect 117 0 119 1;
 #X connect 118 0 70 0;
+#X connect 119 0 64 0;
+#X connect 120 0 88 0;
+#X connect 122 0 109 0;
+#X connect 123 0 124 0;
+#X connect 123 1 124 1;
+#X connect 124 0 122 0;
+#X connect 125 0 126 0;
+#X connect 126 0 122 1;
 #X restore 952 45 pd sliders_to_array_and_canvases;
 #N canvas 119 137 1408 710 handle_input 0;
 #X obj 45 495 v \$0-pos;
@@ -1422,7 +1441,7 @@ if length is multiple of these.;
 #X obj 53 127 r \$0-length;
 #X obj 53 149 pack 16 \$0;
 #N canvas 811 387 450 300 \$0-clone 0;
-#X obj 100 100 r 1003-in;
+#X obj 100 100 r 1151-in;
 #X obj 100 150 clone 16 -seq-vel-helper-ramp.cl;
 #X connect 0 0 1 0;
 #X restore 53 257 pd \$0-clone;
@@ -1568,7 +1587,7 @@ multiple sequencers easily);
 #X connect 13 0 4 0;
 #X restore 843 45 pd position;
 #X obj 1150 624 v \$0-pos;
-#N canvas 198 62 318 336 reset_values 0;
+#N canvas 198 62 376 344 reset_values 0;
 #X obj 47 178 until;
 #X obj 47 201 f;
 #X obj 76 201 + 1;
@@ -1612,9 +1631,8 @@ multiple sequencers easily);
 #X text 1393 648 fallback to last;
 #X msg 829 867 hit \$1;
 #X obj 701 801 t f f;
-#X text 1311 739 output edited value;
-#X obj 1312 761 r \$0-edit-value;
-#X msg 1312 784 \$2 \$1;
+#X text 1287 739 output edited value;
+#X obj 1288 761 r \$0-edit-value;
 #X obj 103 537 t l l;
 #X text 1427 312 TODOS maybe \; show grid for int-scale \; correct
 handling for duration of first step? \; allow min/max value setting?
@@ -1624,6 +1642,8 @@ of next values) \;;
 #X text 1428 174 TODOS \; backwards run and stumble with negative values
 \; init tempo with parameter \; set tempo via message \; use 24bit
 colors \;;
+#X obj 701 655 expr if($f2 > 0 \, int($f1+0.5) \, $f1);
+#X obj 884 624 r \$0-grid;
 #X connect 0 0 59 0;
 #X connect 2 0 20 1;
 #X connect 2 1 26 0;
@@ -1650,13 +1670,13 @@ colors \;;
 #X connect 25 0 19 1;
 #X connect 26 0 3 0;
 #X connect 26 1 6 0;
-#X connect 27 0 39 0;
+#X connect 27 0 111 0;
 #X connect 28 0 96 0;
 #X connect 30 0 27 0;
 #X connect 32 0 16 0;
 #X connect 32 1 17 1;
 #X connect 32 2 13 0;
-#X connect 34 0 109 0;
+#X connect 34 0 108 0;
 #X connect 36 0 20 0;
 #X connect 37 0 105 0;
 #X connect 38 0 37 1;
@@ -1707,8 +1727,9 @@ colors \;;
 #X connect 104 0 81 0;
 #X connect 105 0 24 0;
 #X connect 105 1 104 0;
-#X connect 107 0 108 0;
-#X connect 108 0 80 0;
-#X connect 109 0 21 0;
-#X connect 109 1 14 1;
+#X connect 107 0 80 0;
+#X connect 108 0 21 0;
+#X connect 108 1 14 1;
+#X connect 111 0 39 0;
+#X connect 112 0 111 1;
 #X coords 0 -1 1 1 240 49 2 100 100;
