@@ -7,135 +7,135 @@
 #X obj 464 516 r \$0-length;
 #X obj 453 548 f, f 2;
 #N canvas -310 55 1920 1037 \$0-interface 0;
-#X obj 100 100 hradio 15 1 1 16 2392-radio-sender 2392-radio-receiver
+#X obj 100 100 hradio 15 1 1 16 1591-radio-sender 1591-radio-receiver
 empty 0 -8 0 10 #fcfcfc #000000 #000000 0;
-#X obj 100 102 vsl 15 44 0 1 0 0 2392-0-vsl-sender 2392-0-vsl-receiver
+#X obj 100 102 vsl 15 44 0 1 0 0 1591-0-vsl-sender 1591-0-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 101 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 101 101 cnv 1 13 47 empty 2392-0-vsl-cnv-receiver empty 20 12
+#X obj 101 101 cnv 1 13 47 empty 1591-0-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 115 102 vsl 15 44 0 1 0 0 2392-1-vsl-sender 2392-1-vsl-receiver
+#X obj 115 102 vsl 15 44 0 1 0 0 1591-1-vsl-sender 1591-1-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 116 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 116 101 cnv 1 13 47 empty 2392-1-vsl-cnv-receiver empty 20 12
+#X obj 116 101 cnv 1 13 47 empty 1591-1-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 130 102 vsl 15 44 0 1 0 0 2392-2-vsl-sender 2392-2-vsl-receiver
+#X obj 130 102 vsl 15 44 0 1 0 0 1591-2-vsl-sender 1591-2-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 131 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 131 101 cnv 1 13 47 empty 2392-2-vsl-cnv-receiver empty 20 12
+#X obj 131 101 cnv 1 13 47 empty 1591-2-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 145 102 vsl 15 44 0 1 0 0 2392-3-vsl-sender 2392-3-vsl-receiver
+#X obj 145 102 vsl 15 44 0 1 0 0 1591-3-vsl-sender 1591-3-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 146 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 146 101 cnv 1 13 47 empty 2392-3-vsl-cnv-receiver empty 20 12
+#X obj 146 101 cnv 1 13 47 empty 1591-3-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 160 102 vsl 15 44 0 1 0 0 2392-4-vsl-sender 2392-4-vsl-receiver
+#X obj 160 102 vsl 15 44 0 1 0 0 1591-4-vsl-sender 1591-4-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 161 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 161 101 cnv 1 13 47 empty 2392-4-vsl-cnv-receiver empty 20 12
+#X obj 161 101 cnv 1 13 47 empty 1591-4-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 175 102 vsl 15 44 0 1 0 0 2392-5-vsl-sender 2392-5-vsl-receiver
+#X obj 175 102 vsl 15 44 0 1 0 0 1591-5-vsl-sender 1591-5-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 176 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 176 101 cnv 1 13 47 empty 2392-5-vsl-cnv-receiver empty 20 12
+#X obj 176 101 cnv 1 13 47 empty 1591-5-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 190 102 vsl 15 44 0 1 0 0 2392-6-vsl-sender 2392-6-vsl-receiver
+#X obj 190 102 vsl 15 44 0 1 0 0 1591-6-vsl-sender 1591-6-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 191 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 191 101 cnv 1 13 47 empty 2392-6-vsl-cnv-receiver empty 20 12
+#X obj 191 101 cnv 1 13 47 empty 1591-6-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 205 102 vsl 15 44 0 1 0 0 2392-7-vsl-sender 2392-7-vsl-receiver
+#X obj 205 102 vsl 15 44 0 1 0 0 1591-7-vsl-sender 1591-7-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 206 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 206 101 cnv 1 13 47 empty 2392-7-vsl-cnv-receiver empty 20 12
+#X obj 206 101 cnv 1 13 47 empty 1591-7-vsl-cnv-receiver empty 20 12
 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 220 102 vsl 15 44 0 1 0 0 2392-8-vsl-sender 2392-8-vsl-receiver
+#X obj 220 102 vsl 15 44 0 1 0 0 1591-8-vsl-sender 1591-8-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 221 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 221 101 cnv 1 13 47 empty 2392-8-vsl-cnv-receiver empty 20 12
+#X obj 221 101 cnv 1 13 47 empty 1591-8-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 235 102 vsl 15 44 0 1 0 0 2392-9-vsl-sender 2392-9-vsl-receiver
+#X obj 235 102 vsl 15 44 0 1 0 0 1591-9-vsl-sender 1591-9-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 236 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 236 101 cnv 1 13 47 empty 2392-9-vsl-cnv-receiver empty 20 12
+#X obj 236 101 cnv 1 13 47 empty 1591-9-vsl-cnv-receiver empty 20 12
 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 250 102 vsl 15 44 0 1 0 0 2392-10-vsl-sender 2392-10-vsl-receiver
+#X obj 250 102 vsl 15 44 0 1 0 0 1591-10-vsl-sender 1591-10-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 251 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 251 101 cnv 1 13 47 empty 2392-10-vsl-cnv-receiver empty 20
+#X obj 251 101 cnv 1 13 47 empty 1591-10-vsl-cnv-receiver empty 20
 12 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 265 102 vsl 15 44 0 1 0 0 2392-11-vsl-sender 2392-11-vsl-receiver
+#X obj 265 102 vsl 15 44 0 1 0 0 1591-11-vsl-sender 1591-11-vsl-receiver
 empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 266 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
 0;
-#X obj 266 101 cnv 1 13 47 empty 2392-11-vsl-cnv-receiver empty 20
+#X obj 266 101 cnv 1 13 47 empty 1591-11-vsl-cnv-receiver empty 20
 12 0 14 #fcfcfc #fcfcfc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 280 102 vsl 15 44 0 1 0 0 2392-12-vsl-sender 2392-12-vsl-receiver
+#X obj 280 102 vsl 15 44 0 1 0 0 1591-12-vsl-sender 1591-12-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 281 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 281 101 cnv 1 13 47 empty 2392-12-vsl-cnv-receiver empty 20
+#X obj 281 101 cnv 1 13 47 empty 1591-12-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 295 102 vsl 15 44 0 1 0 0 2392-13-vsl-sender 2392-13-vsl-receiver
+#X obj 295 102 vsl 15 44 0 1 0 0 1591-13-vsl-sender 1591-13-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 296 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 296 101 cnv 1 13 47 empty 2392-13-vsl-cnv-receiver empty 20
+#X obj 296 101 cnv 1 13 47 empty 1591-13-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 310 102 vsl 15 44 0 1 0 0 2392-14-vsl-sender 2392-14-vsl-receiver
+#X obj 310 102 vsl 15 44 0 1 0 0 1591-14-vsl-sender 1591-14-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 311 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 311 101 cnv 1 13 47 empty 2392-14-vsl-cnv-receiver empty 20
+#X obj 311 101 cnv 1 13 47 empty 1591-14-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
-#X obj 325 102 vsl 15 44 0 1 0 0 2392-15-vsl-sender 2392-15-vsl-receiver
+#X obj 325 102 vsl 15 44 0 1 0 0 1591-15-vsl-sender 1591-15-vsl-receiver
 empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
 #X obj 326 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
 0;
-#X obj 326 101 cnv 1 13 47 empty 2392-15-vsl-cnv-receiver empty 20
+#X obj 326 101 cnv 1 13 47 empty 1591-15-vsl-cnv-receiver empty 20
 12 0 14 #dcdcdc #dcdcdc 0;
-#X obj 101 101 cnv 1 13 1 empty 2392-vsl-mark-receiver empty 20 12
+#X obj 101 101 cnv 1 13 1 empty 1591-vsl-mark-receiver empty 20 12
 0 14 #000000 #000000 0;
 #X coords 0 -1 1 1 240 49 2 100 100;
 #X restore 100 100 pd \$0-interface;
@@ -1434,22 +1434,20 @@ int-value for gridded version;
 #X text 697 958 output only values >0;
 #X text 882 765 output values (including 0s);
 #X text 771 708 either val>0 OR grid set;
-#N canvas 819 103 528 445 set_ramped_value 0;
-#X msg 89 216 0;
-#X obj 38 272 pack f f 0 s \$0;
-#X obj 38 86 t l l;
-#X obj 70 111 list length;
-#X obj 70 135 sel 2 3;
-#X text 133 137 if only 2 or 3 params given;
-#X obj 38 54 r \$0-set-ramped-value;
-#X msg 139 216 symbol linear;
+#N canvas 819 103 697 814 set_ramped_value 0;
+#X msg 89 216 0, f 1;
+#X obj 38 710 pack f f 0 s \$0;
+#X obj 89 145 list length;
+#X obj 89 169 sel 2 3;
+#X obj 38 44 r \$0-set-ramped-value;
+#X msg 114 216 symbol linear;
 #N canvas 656 339 922 356 dynamic-clone 0;
 #X obj 53 48 inlet;
 #X obj 53 72 s \$0-in;
 #X obj 53 127 r \$0-length;
 #X obj 53 149 pack 16 \$0;
 #N canvas 811 387 450 300 \$0-clone 0;
-#X obj 100 100 r 2392-in;
+#X obj 100 100 r 1591-in;
 #X obj 100 150 clone 16 -seq-vel-helper-ramp.cl;
 #X connect 0 0 1 0;
 #X restore 53 257 pd \$0-clone;
@@ -1460,19 +1458,69 @@ int-value for gridded version;
 #X connect 2 0 3 0;
 #X connect 3 0 6 0;
 #X connect 6 0 5 0;
-#X restore 38 339 pd dynamic-clone;
+#X restore 38 749 pd dynamic-clone;
+#X obj 288 254 r \$0-grid;
+#X obj 38 86 t l l l;
+#X obj 249 344 unpack f f;
+#X obj 249 302 spigot;
+#X obj 288 278 > 0;
+#X text 152 170 fallback to 0 duration and linear easing \; if only
+2 or 3 params given;
+#X text 300 303 only if grid active;
+#X obj 249 498 sel 1;
+#X obj 65 655 +;
+#X msg 249 589 0.99999;
+#X obj 249 545 t b b;
+#X obj 321 588 + 0.99999;
+#X obj 321 612 array set \$0-seq;
+#X obj 249 405 array get \$0-seq 0 1;
+#X obj 321 564 f;
+#X obj 249 429 t f f;
+#X obj 249 368 t f f;
+#X text 294 369 index;
+#X text 295 430 start value;
+#X obj 249 473 >;
+#X text 99 656 target value correction;
+#X text 442 612 start value correction;
+#X obj 38 594 unpack f f f s;
+#X text 361 543 handle gridded downwards ramp \; FIXME: quite ugly
+with 0.99999;
 #X connect 0 0 1 2;
-#X connect 1 0 8 0;
-#X connect 2 0 1 0;
-#X connect 2 1 3 0;
-#X connect 3 0 4 0;
-#X connect 4 0 0 0;
-#X connect 4 0 7 0;
-#X connect 4 1 7 0;
-#X connect 6 0 2 0;
-#X connect 7 0 1 3;
+#X connect 1 0 6 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 3 0 5 0;
+#X connect 3 1 5 0;
+#X connect 4 0 8 0;
+#X connect 5 0 1 3;
+#X connect 7 0 11 0;
+#X connect 8 0 29 0;
+#X connect 8 1 10 0;
+#X connect 8 2 2 0;
+#X connect 9 0 23 0;
+#X connect 9 1 26 1;
+#X connect 10 0 9 0;
+#X connect 11 0 10 1;
+#X connect 14 0 17 0;
+#X connect 14 1 15 1;
+#X connect 15 0 1 1;
+#X connect 16 0 15 1;
+#X connect 17 0 16 0;
+#X connect 17 1 21 0;
+#X connect 18 0 19 0;
+#X connect 20 0 22 0;
+#X connect 21 0 18 0;
+#X connect 22 0 26 0;
+#X connect 22 1 21 1;
+#X connect 23 0 20 0;
+#X connect 23 1 19 1;
+#X connect 26 0 14 0;
+#X connect 29 0 1 0;
+#X connect 29 1 15 0;
+#X connect 29 2 1 2;
+#X connect 29 3 1 3;
 #X restore 1237 206 pd set_ramped_value;
-#N canvas 308 34 1488 897 set_ramped_sequence 0;
+#N canvas 308 34 629 817 set_ramped_sequence 0;
 #X obj 151 534 list length;
 #X obj 151 557 - 1;
 #X obj 84 583 list split;
@@ -1481,34 +1529,34 @@ int-value for gridded version;
 #X obj 116 717 + 1;
 #X obj 84 671 t f b;
 #X msg 128 694 0;
-#X msg 276 623 get \$1 1;
+#X msg 273 623 get \$1 1;
 #X obj 246 589 t f f;
 #X obj 84 646 list length;
-#X obj 246 692 pack f f 0 s \$0;
 #X obj 51 248 list split;
 #X obj 118 161 list length;
 #X obj 118 184 - 1;
 #X obj 51 46 r \$0-set-ramped-sequence;
 #X obj 246 744 s \$0-set-ramped-value;
 #X obj 84 308 route symbol;
-#X msg 322 589 symbol linear;
+#X msg 327 589 symbol linear;
 #X obj 145 331 t b b;
 #X obj 84 332 t b s;
 #X text 192 334 if no ease-mode found \, proceed with previous list
 and set linear easing, f 37;
 #X obj 84 515 t l l;
 #X obj 84 606 t l l;
-#X obj 276 656 list store;
+#X obj 273 656 list store;
 #X obj 84 486 list store;
 #X msg 84 426 get 0 4;
 #X obj 118 208 t f f;
 #X msg 95 401 set get 0 \$1;
 #X obj 51 109 t l l l;
 #X text 404 746 set each ramped value;
+#X obj 246 692 pack f f 0 s;
 #X connect 0 0 1 0;
 #X connect 1 0 2 1;
-#X connect 2 0 23 0;
-#X connect 2 1 11 2;
+#X connect 2 0 22 0;
+#X connect 2 1 30 2;
 #X connect 3 0 4 0;
 #X connect 4 0 9 0;
 #X connect 4 0 5 0;
@@ -1516,35 +1564,35 @@ and set linear easing, f 37;
 #X connect 6 0 3 0;
 #X connect 6 1 7 0;
 #X connect 7 0 4 1;
-#X connect 8 0 24 0;
-#X connect 9 0 11 0;
+#X connect 8 0 23 0;
+#X connect 9 0 30 0;
 #X connect 9 1 8 0;
 #X connect 10 0 6 0;
-#X connect 11 0 16 0;
-#X connect 12 1 17 0;
-#X connect 13 0 14 0;
-#X connect 14 0 27 0;
-#X connect 15 0 29 0;
-#X connect 17 0 20 0;
-#X connect 17 1 19 0;
-#X connect 18 0 11 3;
+#X connect 11 1 16 0;
+#X connect 12 0 13 0;
+#X connect 13 0 26 0;
+#X connect 14 0 28 0;
+#X connect 16 0 19 0;
+#X connect 16 1 18 0;
+#X connect 17 0 30 3;
+#X connect 18 0 24 0;
+#X connect 18 1 17 0;
 #X connect 19 0 25 0;
-#X connect 19 1 18 0;
-#X connect 20 0 26 0;
-#X connect 20 1 11 3;
-#X connect 22 0 2 0;
-#X connect 22 1 0 0;
-#X connect 23 0 10 0;
-#X connect 23 1 24 1;
-#X connect 24 0 11 1;
-#X connect 25 0 22 0;
-#X connect 26 0 25 0;
-#X connect 27 0 12 1;
-#X connect 27 1 28 0;
-#X connect 28 0 26 0;
-#X connect 29 0 12 0;
-#X connect 29 1 13 0;
-#X connect 29 2 25 1;
+#X connect 19 1 30 3;
+#X connect 21 0 2 0;
+#X connect 21 1 0 0;
+#X connect 22 0 10 0;
+#X connect 22 1 23 1;
+#X connect 23 0 30 1;
+#X connect 24 0 21 0;
+#X connect 25 0 24 0;
+#X connect 26 0 11 1;
+#X connect 26 1 27 0;
+#X connect 27 0 25 0;
+#X connect 28 0 11 0;
+#X connect 28 1 12 0;
+#X connect 28 2 24 1;
+#X connect 30 0 15 0;
 #X restore 1237 243 pd set_ramped_sequence;
 #X obj 998 880 t a a;
 #X obj 968 935 outlet;
@@ -1607,7 +1655,7 @@ multiple sequencers easily);
 #X obj 162 270 sel 0 1, f 10;
 #X obj 130 361 pack 0 s;
 #X obj 130 385 unpack 0 s;
-#X obj 47 478 pack f 0 0 s \$0;
+#X obj 47 478 pack f 0 0 s;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 0 19 0;
