@@ -3,6 +3,72 @@
 #X obj 1226 45 namecanvas \$0-this-canvas;
 #X obj 320 497 savestate;
 #N canvas 526 332 963 304 \$0-interface 0;
+#X obj 100 100 hradio 15 1 1 8 11614-radio-sender 11614-radio-receiver
+empty 0 -8 0 10 #fcfcfc #000000 #000000 0;
+#X obj 100 102 vsl 15 44 0 1 0 0 11614-0-vsl-sender 11614-0-vsl-receiver
+empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 101 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
+0;
+#X obj 101 101 cnv 1 13 47 empty 11614-0-vsl-cnv-receiver empty 20
+12 0 14 #fcfcfc #fcfcfc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
+#X obj 115 102 vsl 15 44 0 1 0 0 11614-1-vsl-sender 11614-1-vsl-receiver
+empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 116 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
+0;
+#X obj 116 101 cnv 1 13 47 empty 11614-1-vsl-cnv-receiver empty 20
+12 0 14 #fcfcfc #fcfcfc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
+#X obj 130 102 vsl 15 44 0 1 0 0 11614-2-vsl-sender 11614-2-vsl-receiver
+empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 131 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
+0;
+#X obj 131 101 cnv 1 13 47 empty 11614-2-vsl-cnv-receiver empty 20
+12 0 14 #fcfcfc #fcfcfc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
+#X obj 145 102 vsl 15 44 0 1 0 0 11614-3-vsl-sender 11614-3-vsl-receiver
+empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 146 101 cnv 13 13 47 empty empty empty 20 12 0 14 #acacac #acacac
+0;
+#X obj 146 101 cnv 1 13 47 empty 11614-3-vsl-cnv-receiver empty 20
+12 0 14 #fcfcfc #fcfcfc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
+#X obj 160 102 vsl 15 44 0 1 0 0 11614-4-vsl-sender 11614-4-vsl-receiver
+empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
+#X obj 161 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
+0;
+#X obj 161 101 cnv 1 13 47 empty 11614-4-vsl-cnv-receiver empty 20
+12 0 14 #dcdcdc #dcdcdc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
+#X obj 175 102 vsl 15 44 0 1 0 0 11614-5-vsl-sender 11614-5-vsl-receiver
+empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
+#X obj 176 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
+0;
+#X obj 176 101 cnv 1 13 47 empty 11614-5-vsl-cnv-receiver empty 20
+12 0 14 #dcdcdc #dcdcdc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
+#X obj 190 102 vsl 15 44 0 1 0 0 11614-6-vsl-sender 11614-6-vsl-receiver
+empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
+#X obj 191 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
+0;
+#X obj 191 101 cnv 1 13 47 empty 11614-6-vsl-cnv-receiver empty 20
+12 0 14 #dcdcdc #dcdcdc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
+#X obj 205 102 vsl 15 44 0 1 0 0 11614-7-vsl-sender 11614-7-vsl-receiver
+empty 0 -9 0 10 #dcdcdc #000000 #000000 0 1;
+#X obj 206 101 cnv 13 13 47 empty empty empty 20 12 0 14 #9c9c9c #9c9c9c
+0;
+#X obj 206 101 cnv 1 13 47 empty 11614-7-vsl-cnv-receiver empty 20
+12 0 14 #dcdcdc #dcdcdc 0;
+#X obj 101 101 cnv 1 13 1 empty 11614-vsl-mark-receiver empty 20 12
+0 14 #000000 #000000 0;
 #X coords 0 -1 1 1 120 49 2 100 100;
 #X restore 100 100 pd \$0-interface;
 #X text 397 496 save state;
@@ -37,7 +103,7 @@
 #X msg 918 624 pos \$1;
 #X msg 785 788 val \$1;
 #X text 109 769 set slider address;
-#N canvas 203 236 1142 524 calculate_color 0;
+#N canvas 203 236 1142 524 calculate_color 1;
 #X obj 188 241 % 10;
 #X obj 68 441 s \$0-color;
 #X obj 68 328 * 63;
@@ -172,7 +238,7 @@
 #X obj 1573 684 list prepend values;
 #X obj 1573 623 r \$0-output;
 #X text 1645 708 output list as "values";
-#N canvas 244 171 1278 726 args 0;
+#N canvas 244 171 1278 726 args 1;
 #X obj 489 564 sel 0;
 #X msg 489 589 3;
 #X msg 327 589 999;
@@ -311,7 +377,7 @@
 ;
 #X text 1066 447 partition length;
 #X obj 327 564 sel 0;
-#N canvas 577 99 794 823 color_mapping 0;
+#N canvas 577 99 794 823 color_mapping 1;
 #X obj 297 33 inlet;
 #X obj 61 749 outlet;
 #X obj 297 71 route red bright-red;
@@ -357,9 +423,9 @@
 #X obj 297 512 route violet bright-violet;
 #X msg 372 536 879;
 #X msg 297 536 519;
-#X obj 567 682 route float symbol;
-#X obj 628 706 symbol;
-#X obj 628 730 f;
+#X obj 641 706 symbol;
+#X obj 641 730 f;
+#X obj 567 682 route float;
 #X connect 0 0 2 0;
 #X connect 2 0 25 0;
 #X connect 2 1 26 0;
@@ -419,7 +485,7 @@
 #X connect 39 2 29 0;
 #X connect 39 3 28 0;
 #X connect 39 4 40 0;
-#X connect 39 5 45 0;
+#X connect 39 5 47 0;
 #X connect 40 0 20 0;
 #X connect 41 0 1 0;
 #X connect 42 0 44 0;
@@ -427,10 +493,10 @@
 #X connect 42 2 9 0;
 #X connect 43 0 41 0;
 #X connect 44 0 41 0;
-#X connect 45 0 47 0;
-#X connect 45 1 46 0;
-#X connect 46 0 47 0;
-#X connect 47 0 1 0;
+#X connect 45 0 46 0;
+#X connect 46 0 1 0;
+#X connect 47 0 46 0;
+#X connect 47 1 45 0;
 #X restore 327 471 pd color_mapping;
 #X obj 489 471 symbol;
 #X obj 489 539 f;
@@ -1543,10 +1609,8 @@ multiple sequencers easily);
 #X obj 621 624 array get \$0-seq 0 1;
 #X obj 380 568 array get \$0-seq 0 -1;
 #X obj 1573 660 array get \$0-seq 0 -1;
-#X obj 1139 742 change;
 #X obj 1139 702 div;
 #X msg 1139 766 cycle \$1;
-#X msg 1206 723 -1;
 #N canvas 558 142 675 747 sort 0;
 #X obj 54 38 r \$0-sort;
 #X obj 451 37 array define \$0-sort-temp;
@@ -1747,9 +1811,9 @@ next values) \;;
 #X text 1427 202 TODOS \; "normalize" values (0..1 if no grid given)
 \; random run and stumble via additional "random" param? \; allow to
 seed randoms via "seed" message \;;
-#X obj 1206 699 loadbang;
 #X obj 1157 675 v \$0-length;
 #X obj 1116 648 t f f b;
+#X obj 1139 742 change -1;
 #X connect 0 0 47 0;
 #X connect 2 0 16 1;
 #X connect 2 1 102 0;
@@ -1804,7 +1868,7 @@ seed randoms via "seed" message \;;
 #X connect 74 0 73 1;
 #X connect 75 0 74 0;
 #X connect 75 1 70 1;
-#X connect 81 0 114 0;
+#X connect 81 0 111 0;
 #X connect 83 0 85 0;
 #X connect 84 0 101 0;
 #X connect 84 1 33 0;
@@ -1829,13 +1893,11 @@ seed randoms via "seed" message \;;
 #X connect 101 0 97 0;
 #X connect 102 0 2 0;
 #X connect 103 0 40 0;
-#X connect 104 0 106 0;
-#X connect 105 0 104 0;
-#X connect 106 0 68 0;
-#X connect 107 0 104 0;
-#X connect 112 0 107 0;
-#X connect 113 0 105 1;
-#X connect 114 0 49 0;
-#X connect 114 1 105 0;
-#X connect 114 2 113 0;
+#X connect 104 0 112 0;
+#X connect 105 0 68 0;
+#X connect 110 0 104 1;
+#X connect 111 0 49 0;
+#X connect 111 1 104 0;
+#X connect 111 2 110 0;
+#X connect 112 0 105 0;
 #X coords 0 -1 1 1 120 49 2 100 100;
