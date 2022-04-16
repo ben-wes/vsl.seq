@@ -62,7 +62,7 @@ or in the given order without a key name:, f 106;
 #X text 58 291 =;
 #X restore 510 483 pd easings;
 #X text 197 372 transition single values;
-#X text 87 399 |pos value(;
+#X text 87 398 |pos value(;
 #X msg 199 399 set 1 0 500;
 #X msg 207 424 set 1 1 1000;
 #X text 24 342 INPUTS/OUTPUTS;
@@ -75,21 +75,21 @@ or in the given order without a key name:, f 106;
 #X obj 602 451 s \$0-receive;
 #X floatatom 72 767 2 0 0 0 - - - 0;
 #X text 91 768 left outlet outputs only values >0;
-#X obj 399 606 s \$0-receive;
-#X text 396 527 run through cycle;
-#X obj 399 669 bng 31 250 50 0 empty empty empty 17 7 0 10 #e0c4fc
+#X obj 389 606 s \$0-receive;
+#X text 386 527 run through cycle;
+#X obj 389 669 bng 31 250 50 0 empty empty empty 17 7 0 10 #e0c4fc
 #000000 #000000;
-#X obj 399 643 r done;
-#X text 510 578 2nd is callback receiver;
-#X obj 752 606 s \$0-receive;
-#X text 750 527 stumble through cycle;
+#X obj 389 643 r done;
+#X text 500 578 2nd is callback receiver;
+#X obj 712 606 s \$0-receive;
+#X text 710 527 stumble through cycle;
 #X msg 58 585 reset;
 #X msg 610 424 0.6 0.2 0.5 0.4 0.3 0.8 0.9 0;
 #X text 600 372 transition all values (ease is optional);
 #X msg 602 399 0.1 0.2 0.4 0.6 0.8 0.9 1 2000 out-bounce;
 #X obj 1 324 cnv 1 1360 2 empty empty empty 20 12 0 14 #f0f0f0 #404040
 0;
-#X obj 928 424 s \$0-receive;
+#X obj 928 451 s \$0-receive;
 #X text 925 372 go to random index;
 #X msg 928 399 random;
 #X text 920 156 partition length;
@@ -138,14 +138,14 @@ or in the given order without a key name:, f 106;
 #X obj 1180 562 -seq-vel 8 height=3 color=navy receiver=\$0-wavecontrol
 partition=8;
 #A saved 1 0.5 0.333333 0.25 0.2 0.166667 0.142857 0.125;
-#X text 461 553 1st param is cycle duration;
-#X msg 399 554 run 800;
+#X text 451 553 1st param is cycle duration;
+#X msg 389 554 run 800;
 #X text 411 758 Behind the upper square of each slider is a bang object
 to switch to this position For manipulating values \, drag from the
 lower parts of the slider., f 84;
-#X text 749 640 stumble mode will divide the set cycle duration according
+#X text 709 640 stumble mode will divide the set cycle duration according
 to the set values for each step. values of 0 are skipped., f 39;
-#X text 439 669 See callback after run or stumble here., f 20;
+#X text 429 669 See callback after run or stumble here., f 20;
 #X text 140 635 right inlet accepts "pos-abs" messages only to easily
 connect 2 modules., f 27;
 #X text 524 229 rasterizes scale outputs integers, f 16;
@@ -159,16 +159,14 @@ connect 2 modules., f 27;
 23 10 0 12 #ffffff #000000 #000000;
 #X obj 1123 105 bng 19 250 50 0 \$0-show-examples empty click\\\ for\\\ examples
 23 10 0 12 #ffffff #000000 #000000;
-#X msg 407 579 run 2000 done;
-#X msg 760 579 stumble -1000 done;
-#X msg 752 554 stumble -2000;
-#X text 897 578 negative duration and callback;
-#X text 853 553 cycle backwards via negative duration;
-#X text 926 451 will jump to position based on weighted value probability.
+#X msg 397 579 run 2000 done;
+#X msg 720 579 stumble -1000 done;
+#X msg 712 554 stumble -2000;
+#X text 857 578 negative duration and callback;
+#X text 813 553 cycle backwards via negative duration;
+#X text 926 474 will jump to position based on weighted value probability.
 , f 23;
-#X text 1120 372 permute values;
 #X obj 1123 478 s \$0-receive;
-#X msg 1131 451 permute;
 #X msg 1123 399 permute 1 2 3 4 5 6 0;
 #X text 1131 420 either by list of indices;
 #X text 1192 450 or randomly;
@@ -252,6 +250,10 @@ input/output/manipulation options, f 89;
 #X connect 33 0 34 0;
 #X connect 34 0 35 0;
 #X restore 1274 16 pd helpers;
+#X msg 1131 451 shuffle;
+#X text 1120 372 permute/shuffle values;
+#X msg 1019 399 seed 42;
+#X text 1015 420 seed randoms;
 #X connect 0 0 77 0;
 #X connect 1 0 77 0;
 #X connect 20 0 21 0;
@@ -275,5 +277,6 @@ input/output/manipulation options, f 89;
 #X connect 94 0 52 0;
 #X connect 95 0 57 0;
 #X connect 96 0 57 0;
-#X connect 102 0 101 0;
-#X connect 103 0 101 0;
+#X connect 101 0 100 0;
+#X connect 107 0 100 0;
+#X connect 109 0 64 0;
