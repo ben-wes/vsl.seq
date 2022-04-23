@@ -16,7 +16,7 @@
 #X text 281 433 $f2: to;
 #X text 366 432 $f3: from;
 #X obj 138 102 unpack f f s f;
-#X obj 180 391 -seq-vel-helper-ease;
+#X obj 180 391 vsl.seq-helper-ease;
 #X obj 137 204 t f f;
 #X obj 57 477 t f b;
 #X obj 57 502 del;

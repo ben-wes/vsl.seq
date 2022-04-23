@@ -810,7 +810,7 @@ length is multiple of these.;
 ;
 #X text 201 706 display grid position or only 2 decimal digits \; and
 int-value for gridded version;
-#X obj 922 540 clone 32 -seq-vel-helper-output-edited.cl;
+#X obj 922 540 clone 32 vsl.seq-helper-output-edited.cl;
 #X obj 922 471 swap;
 #X obj 922 496 pack;
 #X obj 1206 476 r \$0-grid;
@@ -1329,7 +1329,7 @@ int-value for gridded version;
 #X obj 38 594 unpack f f f s;
 #X text 361 543 handle gridded downwards ramp \; FIXME: quite ugly
 with 0.99999;
-#X obj 38 749 clone 32 -seq-vel-helper-ramp.cl;
+#X obj 38 749 clone 32 vsl.seq-helper-ramp.cl;
 #X connect 0 0 1 2;
 #X connect 1 0 30 0;
 #X connect 2 0 3 0;

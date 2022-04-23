@@ -130,12 +130,12 @@ or in the given order without a key name:, f 106;
 #X obj 386 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040
 0;
 #X text 389 766 !;
-#X obj 72 694 -seq-vel 4 height=4 color=324 grid=4;
+#X obj 72 694 vsl.seq 4 height=4 color=324 grid=4;
 #A saved 0 0 0 1;
-#X obj 27 635 -seq-vel 7 color=879 receiver=\$0-receive sender=\$0-send
+#X obj 27 635 vsl.seq 7 color=879 receiver=\$0-receive sender=\$0-send
 ;
 #A saved 0.5 0.9 0.2 0.8 0.3 0.4 0.6;
-#X obj 1180 562 -seq-vel 8 height=3 color=navy receiver=\$0-wavecontrol
+#X obj 1180 562 vsl.seq 8 height=3 color=navy receiver=\$0-wavecontrol
 partition=8;
 #A saved 1 0.5 0.333333 0.25 0.2 0.166667 0.142857 0.125;
 #X text 451 553 1st param is cycle duration;
@@ -172,7 +172,7 @@ connect 2 modules., f 27;
 #X text 1192 450 or randomly;
 #X obj 1 1 cnv 15 1360 48 empty empty empty 20 12 0 14 #f0f0f0 #404040
 0;
-#X text 25 15 -seq-vel : sequencer with step velocities and multiple
+#X text 25 15 vsl.seq : sequencer with step velocities and multiple
 input/output/manipulation options, f 89;
 #N canvas 575 267 803 641 helpers 0;
 #X obj 93 191 pdcontrol;
@@ -181,9 +181,9 @@ input/output/manipulation options, f 89;
 #X obj 93 134 loadbang;
 #X msg 40 282 \; pd open \$1 \$2;
 #X obj 93 221 makefilename %s/;
-#X msg 40 65 -seq-vel-help.colors.pd;
+#X msg 40 65 vsl.seq-help.colors.pd;
 #X obj 40 40 r \$0-show-colors;
-#X msg 230 65 -seq-vel-help.examples.pd;
+#X msg 230 65 vsl.seq-help.examples.pd;
 #X obj 230 40 r \$0-show-examples;
 #X obj 556 41 loadbang;
 #X obj 602 119 s \$0-wavecontrol;
