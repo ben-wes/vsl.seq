@@ -1,2 +1,29 @@
 # vsl.seq
-Pure Data (pd) sequencer module with step velocities and multiple input/output/manipulation options
+Pure Data (Pd) sequencer and control module with step velocities and multiple input/output/manipulation options
+
+See help patch for explanation and examples.
+
+Left outlet outputs value (if value is set) and right
+
+Parameters:
+* `length` from 1 to 32
+* `height` (only for resolution purposes)
+* `color` to add unreasonable beauty via RGB or preset color names
+* `grid` to rasterize vertical resolution to an integer range instead of float from 0..1
+* `receiver` to set object's receiver address
+* `sender` to set object's sender address
+* `partition` to set partition groups' size for better readability
+
+Messages:
+* `set <index> <value> [<duration> <ease mode>]` for setting value with optional duration and ease-mode
+* list of values with optional `<duration> <ease mode>` for setting all values
+* `random` to output random value/index by value probability
+* `seed` to reseed random (with optional seed number)
+* `permute` with list of indices to reorder sliders/values
+* `shuffle` to randomly reorder sliders/values
+* `sort [-1]` to sort values in gdescending (default) or ascendin (via additional `-1`) order
+* `run <duration>` to run through values with given cycle duration
+* `stumble <duration>` to stumble through values with given cycle duration - but with duration of each step according to its value
+* `output` to output all values (mainly intended to copy sequences to another sequencer)
+* `sum` to output value sum
+* `reset` to reset all values
