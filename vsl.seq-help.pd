@@ -1,10 +1,8 @@
-#N canvas 251 89 1363 813 12;
+#N canvas 277 80 1363 813 12;
 #X floatatom 27 529 5 0 0 0 - - - 0;
 #X obj 49 558 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X text 27 65 PARAMETERS;
-#X text 26 116 You can initialize the following parameters via <key>=<value>
-or in the given order without a key name:, f 106;
 #X text 116 156 length, f 12;
 #X text 116 181 1, f 12;
 #X text 116 205 float (1-32);
@@ -23,15 +21,12 @@ or in the given order without a key name:, f 106;
 #X text 668 205 symbol, f 14;
 #X floatatom 670 261 5 0 0 0 - - - 0;
 #X obj 670 287 s \$0-receive;
-#X obj 795 287 print sent-messages;
 #X text 73 557 bang to increase pos;
 #X text 72 528 set absolute position;
 #X text 793 205 symbol, f 14;
 #X text 793 156 sender name, f 14;
 #X text 793 181 6, f 14;
 #X text 1120 65 EXAMPLES;
-#X text 26 97 The object accepts positional arguments and named arguments.
-, f 62;
 #X msg 27 399 set 1 0;
 #X msg 35 424 set 1 1;
 #X text 25 372 set single values;
@@ -127,20 +122,20 @@ or in the given order without a key name:, f 106;
 #X connect 10 0 8 0;
 #X connect 11 0 8 1;
 #X restore 1212 611 pd harmonics;
-#X obj 386 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040
+#X obj 406 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040
 0;
-#X text 389 766 !;
-#X obj 72 694 vsl.seq 4 height=4 color=324 grid=4;
+#X text 409 766 !;
+#X obj 72 694 vsl.seq 4 -height 4 -color 324 -grid 4;
 #A saved 0 0 0 1;
-#X obj 27 635 vsl.seq 7 color=879 receiver=\$0-receive sender=\$0-send
+#X obj 27 635 vsl.seq 7 -color 879 -receiver \$0-receive -sender \$0-send
 ;
-#A saved 0.5 0.9 0.2 0.8 0.3 0.4 0.6;
-#X obj 1180 562 vsl.seq 8 height=3 color=navy receiver=\$0-wavecontrol
-partition=8;
-#A saved 1 0.5 0.333333 0.25 0.2 0.166667 0.142857 0.125;
+#A saved 0.6 0.2 0.5 0.4 0.3 0.8 0.9;
+#X obj 1180 562 vsl.seq 8 -height 3 -color navy -receiver \$0-wavecontrol
+-partition 8;
+#A saved 1 0.44186 0.333333 0.25 0.186047 0.166667 0.142857 0.125;
 #X text 451 553 1st param is cycle duration;
 #X msg 389 554 run 800;
-#X text 411 758 Behind the upper square of each slider is a bang object
+#X text 431 758 Behind the upper square of each slider is a bang object
 to switch to this position For manipulating values \, drag from the
 lower parts of the slider., f 84;
 #X text 709 640 stumble mode will divide the set cycle duration according
@@ -148,7 +143,6 @@ to the set values for each step. values of 0 are skipped., f 39;
 #X text 429 669 See callback after run or stumble here., f 20;
 #X text 140 635 right inlet accepts "pos-abs" messages only to easily
 connect 2 modules., f 27;
-#X text 524 229 rasterizes scale outputs integers, f 16;
 #X text 919 229 visualize partition groups, f 16;
 #X text 226 229 900 (red) \; lime \; bright-green, f 23;
 #X text 26 156 KEY:, f 5;
@@ -254,29 +248,35 @@ input/output/manipulation options, f 89;
 #X text 1120 372 permute/shuffle values;
 #X msg 1019 399 seed 42;
 #X text 1015 420 seed randoms;
-#X connect 0 0 77 0;
-#X connect 1 0 77 0;
-#X connect 20 0 21 0;
-#X connect 30 0 33 0;
-#X connect 31 0 33 0;
-#X connect 35 0 22 0;
-#X connect 40 0 36 0;
-#X connect 41 0 36 0;
-#X connect 43 0 77 1;
-#X connect 47 0 44 0;
-#X connect 48 0 44 0;
-#X connect 55 0 54 0;
-#X connect 59 0 77 0;
-#X connect 60 0 49 0;
-#X connect 62 0 49 0;
-#X connect 66 0 64 0;
-#X connect 76 0 50 0;
-#X connect 77 1 76 1;
-#X connect 78 1 73 0;
-#X connect 80 0 52 0;
-#X connect 94 0 52 0;
-#X connect 95 0 57 0;
-#X connect 96 0 57 0;
-#X connect 101 0 100 0;
-#X connect 107 0 100 0;
-#X connect 109 0 64 0;
+#X text 26 120 length can also be set by just providing a number without
+a key for convenience., f 82;
+#X text 26 99 You can initialize the following parameters via -<key>
+<value>., f 64;
+#X text 524 229 rasterizes scale outputs to ints, f 16;
+#X obj 795 287 print sent messages;
+#X connect 0 0 74 0;
+#X connect 1 0 74 0;
+#X connect 19 0 20 0;
+#X connect 27 0 30 0;
+#X connect 28 0 30 0;
+#X connect 32 0 110 0;
+#X connect 37 0 33 0;
+#X connect 38 0 33 0;
+#X connect 40 0 74 1;
+#X connect 44 0 41 0;
+#X connect 45 0 41 0;
+#X connect 52 0 51 0;
+#X connect 56 0 74 0;
+#X connect 57 0 46 0;
+#X connect 59 0 46 0;
+#X connect 63 0 61 0;
+#X connect 73 0 47 0;
+#X connect 74 1 73 1;
+#X connect 75 1 70 0;
+#X connect 77 0 49 0;
+#X connect 90 0 49 0;
+#X connect 91 0 54 0;
+#X connect 92 0 54 0;
+#X connect 97 0 96 0;
+#X connect 103 0 96 0;
+#X connect 105 0 61 0;
