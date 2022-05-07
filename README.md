@@ -3,7 +3,7 @@ Pure Data (Pd) sequencer and control module with step velocities and multiple in
 
 See help patch for explanation and examples.
 
-Left outlet outputs value (if value is set) and right
+Left outlet outputs step values. Right outlet outputs additional and contextual data.
 
 ## Creation parameters
 * `length` from 1 to 32
