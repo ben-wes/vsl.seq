@@ -1,6 +1,6 @@
-#N canvas 277 80 1363 813 12;
-#X floatatom 27 529 5 0 0 0 - - - 0;
-#X obj 49 558 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#N canvas 270 80 1363 813 12;
+#X floatatom 27 521 5 0 0 0 - - - 0;
+#X obj 49 550 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X text 27 65 PARAMETERS;
 #X text 116 156 length, f 12;
@@ -19,8 +19,8 @@
 #X text 668 181 5, f 14;
 #X floatatom 670 261 5 0 0 0 - - - 0;
 #X obj 670 287 s \$0-receive;
-#X text 73 557 bang to increase pos;
-#X text 72 528 set absolute position;
+#X text 73 549 bang to increase pos;
+#X text 72 520 set absolute position;
 #X text 793 181 6, f 14;
 #X text 1120 65 EXAMPLES;
 #X msg 27 399 set 1 0;
@@ -74,7 +74,7 @@
 #X text 500 578 2nd is callback receiver;
 #X obj 712 606 s \$0-receive;
 #X text 710 527 stumble through cycle;
-#X msg 58 585 reset;
+#X msg 58 577 reset;
 #X msg 610 424 0.6 0.2 0.5 0.4 0.3 0.8 0.9 0;
 #X text 600 372 transition all values (ease is optional);
 #X msg 602 399 0.1 0.2 0.4 0.6 0.8 0.9 1 2000 out-bounce;
@@ -88,7 +88,7 @@
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-wave 131 float 0;
 #X coords 0 1 130 -1 131 100 1 0 0;
-#X restore 1180 656 graph;
+#X restore 1180 648 graph;
 #X text 1177 527 use as controller;
 #N canvas 480 395 536 492 harmonics 0;
 #X obj 41 34 inlet;
@@ -115,7 +115,7 @@
 #X connect 9 0 4 0;
 #X connect 10 0 8 0;
 #X connect 11 0 8 1;
-#X restore 1212 611 pd harmonics;
+#X restore 1212 603 pd harmonics;
 #X obj 406 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040
 0;
 #X text 409 766 !;
@@ -123,11 +123,11 @@
 #A saved 0 0 0 1;
 #X obj 27 635 vsl.seq 7 -color 879 -receiver \$0-receive -sender \$0-send
 ;
-#A saved 0.6 0.2 0.5 0.4 0.3 0.8 0.9;
-#X obj 1180 562 vsl.seq 8 -height 3 -color navy -receiver \$0-wavecontrol
+#A saved 0.2 0.3 0.4 0.5 0.6 0.8 0.9;
+#X obj 1180 554 vsl.seq 8 -height 3 -color navy -receiver \$0-wavecontrol
 -partition 8;
 #A saved 1 0.5 0.333333 0.25 0.2 0.166667 0.142857 0.125;
-#X text 451 553 1st param is cycle duration;
+#X text 450 553 1st param is cycle duration;
 #X msg 389 554 run 800;
 #X text 431 758 Behind the upper square of each slider is a bang object
 to switch to this position For manipulating values \, drag from the
@@ -154,10 +154,10 @@ connect 2 modules., f 27;
 #X text 813 553 cycle backwards via negative duration;
 #X text 926 474 will jump to position based on weighted value probability.
 , f 23;
-#X obj 1123 478 s \$0-receive;
+#X obj 1123 499 s \$0-receive;
 #X msg 1123 399 permute 1 2 3 4 5 6 0;
 #X text 1131 420 either by list of indices;
-#X text 1192 450 or randomly;
+#X text 1192 448 or randomly;
 #X obj 1 1 cnv 15 1360 48 empty empty empty 20 12 0 14 #f0f0f0 #404040
 0;
 #X text 25 15 vsl.seq : sequencer with step velocities and multiple
@@ -238,8 +238,7 @@ input/output/manipulation options, f 89;
 #X connect 33 0 34 0;
 #X connect 34 0 35 0;
 #X restore 1274 16 pd helpers;
-#X msg 1131 451 shuffle;
-#X text 1120 372 permute/shuffle values;
+#X msg 1131 449 shuffle;
 #X msg 1019 399 seed 42;
 #X text 1015 420 seed randoms;
 #X text 26 120 length can also be set by just providing a number without
@@ -254,12 +253,16 @@ a key for convenience., f 82;
 #X text 919 205 float (0-32), f 16;
 #X text 668 205 string, f 14;
 #X text 793 204 string, f 14;
+#X text 106 577 reset all values;
+#X text 1208 473 sort;
+#X msg 1147 474 sort -1;
+#X text 1120 372 permute/shuffle/sort values;
 #X connect 0 0 68 0;
 #X connect 1 0 68 0;
 #X connect 17 0 18 0;
 #X connect 23 0 26 0;
 #X connect 24 0 26 0;
-#X connect 28 0 104 0;
+#X connect 28 0 103 0;
 #X connect 33 0 29 0;
 #X connect 34 0 29 0;
 #X connect 36 0 68 1;
@@ -279,4 +282,5 @@ a key for convenience., f 82;
 #X connect 86 0 50 0;
 #X connect 91 0 90 0;
 #X connect 97 0 90 0;
-#X connect 99 0 57 0;
+#X connect 98 0 57 0;
+#X connect 112 0 90 0;
