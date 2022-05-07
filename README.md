@@ -5,7 +5,7 @@ See help patch for explanation and examples.
 
 Left outlet outputs value (if value is set) and right
 
-Creation parameters:
+## Creation parameters:
 * `length` from 1 to 32
 * `height` to change visible range for better readability and usability
 * `color` to add unreasonable beauty via RGB or preset color names
@@ -14,7 +14,7 @@ Creation parameters:
 * `sender` to set object's sender address
 * `partition` to set partition groups' size for better readability
 
-Messages:
+## Messages:
 * `set <index> <value> [<duration> <ease mode>]` for setting value with optional duration and ease-mode
 * list of values with optional `<duration> <ease mode>` for setting all values
 * `random` to output random value/index by value probability
