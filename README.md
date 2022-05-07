@@ -5,7 +5,7 @@ See help patch for explanation and examples.
 
 Left outlet outputs value (if value is set) and right
 
-Parameters:
+Creation parameters:
 * `length` from 1 to 32
 * `height` (only for resolution purposes)
 * `color` to add unreasonable beauty via RGB or preset color names
