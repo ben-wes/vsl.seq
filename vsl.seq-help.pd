@@ -65,14 +65,14 @@
 #X obj 602 451 s \$0-receive;
 #X floatatom 72 767 2 0 0 0 - - - 0;
 #X text 91 768 left outlet outputs only values >0;
-#X obj 439 636 s \$0-receive;
-#X text 436 557 run through cycle;
+#X obj 439 628 s \$0-receive;
+#X text 436 549 run through cycle;
 #X obj 439 699 bng 31 250 50 0 empty empty empty 17 7 0 10 #e0c4fc
 #000000 #000000;
 #X obj 439 673 r done;
-#X text 550 608 2nd is callback receiver;
-#X obj 762 636 s \$0-receive;
-#X text 760 557 stumble through cycle;
+#X text 558 600 2nd is callback receiver;
+#X obj 762 628 s \$0-receive;
+#X text 760 549 stumble through cycle;
 #X msg 49 577 reset;
 #X msg 610 424 0.6 0.2 0.5 0.4 0.3 0.8 0.9 0;
 #X text 600 372 transition all values (ease is optional);
@@ -87,8 +87,8 @@
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0-wave 131 float 0;
 #X coords 0 1 130 -1 131 100 1 0 0;
-#X restore 1180 678 graph;
-#X text 1177 557 use as controller;
+#X restore 1180 670 graph;
+#X text 1177 549 use as controller;
 #N canvas 480 395 536 492 harmonics 0;
 #X obj 41 34 inlet;
 #X obj 131 151 list trim;
@@ -114,7 +114,7 @@
 #X connect 9 0 4 0;
 #X connect 10 0 8 0;
 #X connect 11 0 8 1;
-#X restore 1212 633 pd harmonics;
+#X restore 1212 625 pd harmonics;
 #X obj 406 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040
 0;
 #X text 409 766 !;
@@ -123,15 +123,15 @@
 #X obj 27 635 vsl.seq 7 -color 879 -receiver \$0-receive -sender \$0-send
 ;
 #A saved 0.9 0.5 0.4 0.6 0.2 0.3 0.8;
-#X obj 1180 584 vsl.seq 8 -height 3 -color navy -receiver \$0-wavecontrol
+#X obj 1180 576 vsl.seq 8 -height 3 -color navy -receiver \$0-wavecontrol
 -partition 8;
 #A saved 1 0.5 0.333333 0.25 0.2 0.166667 0.142857 0.125;
-#X text 500 583 1st param is cycle duration;
-#X msg 439 584 run 800;
+#X text 500 575 1st param is cycle duration;
+#X msg 439 576 run 800;
 #X text 431 758 Behind the upper square of each slider is a bang object
 to switch to this position For manipulating values \, drag from the
 lower parts of the slider., f 84;
-#X text 759 670 stumble mode will divide the set cycle duration according
+#X text 759 662 stumble mode will divide the set cycle duration according
 to the set values for each step. values of 0 are skipped., f 39;
 #X text 479 699 See callback after run or stumble here., f 20;
 #X text 173 640 right inlet accepts "pos-abs" messages only to easily
@@ -146,11 +146,8 @@ connect 2 modules., f 27;
 23 10 0 12 #ffffff #000000 #000000;
 #X obj 1123 105 bng 19 250 50 0 \$0-show-examples empty click\\\ for\\\ examples
 23 10 0 12 #ffffff #000000 #000000;
-#X msg 447 609 run 2000 done;
-#X msg 770 609 stumble -1000 done;
-#X msg 762 584 stumble -2000;
-#X text 907 608 negative duration and callback;
-#X text 863 583 cycle backwards via negative duration;
+#X msg 762 576 stumble -2000;
+#X text 863 575 cycle backwards via negative duration;
 #X text 926 474 will jump to position based on weighted value probability.
 , f 23;
 #X obj 1123 498 s \$0-receive;
@@ -260,12 +257,15 @@ a key for convenience., f 82;
 #X text 292 576 output all;
 #X text 272 549 output value sum;
 #X msg 239 577 output;
+#X msg 770 601 stumble 1000 done;
+#X text 907 600 with callback;
+#X msg 447 601 run -2000 done;
 #X connect 0 0 67 0;
 #X connect 1 0 67 0;
 #X connect 17 0 18 0;
 #X connect 23 0 26 0;
 #X connect 24 0 26 0;
-#X connect 28 0 102 0;
+#X connect 28 0 99 0;
 #X connect 32 0 29 0;
 #X connect 33 0 29 0;
 #X connect 35 0 67 1;
@@ -280,12 +280,12 @@ a key for convenience., f 82;
 #X connect 67 1 66 1;
 #X connect 68 1 63 0;
 #X connect 70 0 44 0;
-#X connect 83 0 44 0;
-#X connect 84 0 49 0;
-#X connect 85 0 49 0;
-#X connect 90 0 89 0;
-#X connect 96 0 89 0;
-#X connect 97 0 56 0;
-#X connect 110 0 89 0;
-#X connect 112 0 67 0;
-#X connect 116 0 67 0;
+#X connect 83 0 49 0;
+#X connect 87 0 86 0;
+#X connect 93 0 86 0;
+#X connect 94 0 56 0;
+#X connect 107 0 86 0;
+#X connect 109 0 67 0;
+#X connect 113 0 67 0;
+#X connect 114 0 49 0;
+#X connect 116 0 44 0;
