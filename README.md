@@ -8,7 +8,7 @@ Left outlet outputs step values. Right outlet outputs additional and contextual 
 ## Creation parameters
 * `length` from 1 to 32
 * `height` to change visible range for better readability and usability
-* `color` to add unreasonable beauty via RGB or preset color names
+* `color` to add unreasonable beauty via decimal RGB syntax (e.g. `999` for white) or preset color names
 * `grid` to rasterize vertical resolution to an integer range instead of float from 0..1
 * `receiver` to set object's receiver address
 * `sender` to set object's sender address
