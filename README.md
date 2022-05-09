@@ -18,7 +18,7 @@ Left outlet outputs step values. Right outlet outputs additional and contextual 
 * `set <index> <value> [<duration> <ease mode>]` for setting value with optional duration and ease-mode
 * list of values with optional `<duration> <ease mode>` for setting all values
 * `random` to output random value/index by value probability
-* `seed` to reseed random (with optional seed number)
+* `seed [<value>]` to reseed random (with optional seed value)
 * `permute` with list of indices to reorder sliders/values
 * `shuffle` to randomly reorder sliders/values
 * `sort [-1]` to sort values in descending (default) or ascending (via additional `-1`) order
