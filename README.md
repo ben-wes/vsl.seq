@@ -5,8 +5,11 @@ See help patch for explanation and examples.
 
 Left outlet outputs step values. Right outlet outputs additional and contextual data.
 
+[![vsl.seq demonstration](https://img.youtube.com/vi/0EeVjlQpY5Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=0EeVjlQpY5Y)
+
 ## Creation parameters
 * `-length <value>` from 1 to 32
+* `<value>` value alone will be interpreted as length for convencience
 * `-height <value>` to change visible range (1..32) for better readability and usability
 * `-color <rgb>` to add unreasonable beauty via decimal RGB syntax (e.g. `999` for white) or preset color names
 * `-grid <value>` to rasterize vertical resolution to an integer range instead of float from 0..1
