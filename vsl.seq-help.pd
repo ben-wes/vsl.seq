@@ -1,4 +1,4 @@
-#N canvas 265 108 1364 813 12;
+#N canvas 265 108 1362 812 12;
 #X floatatom 27 521 5 0 0 0 - - - 0;
 #X obj 39 550 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
@@ -410,11 +410,13 @@ a key for convenience., f 82;
 #X msg 239 550 sum;
 #X text 97 576 reset all;
 #X text 292 576 output all;
-#X text 272 549 output value sum;
+#X text 271 550 output value sum;
 #X msg 239 577 output;
 #X msg 447 601 run -2000 done;
 #X text 985 600 with callback message;
 #X msg 770 601 stumble 1000 receive run 2000;
+#X msg 239 523 step -3;
+#X text 299 523 individual step;
 #X connect 0 0 61 0;
 #X connect 1 0 61 0;
 #X connect 12 0 13 0;
@@ -444,3 +446,4 @@ a key for convenience., f 82;
 #X connect 106 0 61 0;
 #X connect 107 0 38 0;
 #X connect 109 0 43 0;
+#X connect 110 0 61 0;

@@ -15,6 +15,9 @@ Left outlet outputs step values. Right outlet outputs additional and contextual 
 * `partition` to set partition groups' size for better readability
 
 ## Messages
+* `bang` for stepping ahead by 1
+* `<position>` to move to specified step position
+* `step <step_size>` to move on by specified step size (negative values allowed) 
 * `set <index> <value> [<duration> <ease mode>]` for setting value with optional duration and ease-mode
 * list of values with optional `<duration> <ease mode>` for setting all values
 * `random` to output random value/index by value probability
