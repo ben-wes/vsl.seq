@@ -11,7 +11,7 @@ Left outlet outputs step values. Right outlet outputs additional and contextual 
 * `-length <value>` from 1 to 32
 * `<value>` value alone will be interpreted as length for convencience
 * `-height <value>` to change visible range (1..32) for better readability and usability
-* `-color <rgb>` to add unreasonable beauty via decimal RGB syntax (e.g. `999` for white) or preset color names
+* `-color <rgb>` to add unreasonable beauty via decimal RGB syntax (e.g. `999` for white), hexadecimal 24bit colors (`#ffffff`) or preset color names
 * `-grid <value>` to rasterize vertical resolution to an integer range instead of float from 0..1
 * `-receiver <name>` to set object's receiver address
 * `-sender <name>` to set object's sender address
