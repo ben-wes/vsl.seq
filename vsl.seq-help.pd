@@ -1,7 +1,6 @@
 #N canvas 260 87 1363 815 12;
 #X floatatom 27 521 5 0 0 0 - - - 0;
-#X obj 39 550 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
+#X obj 39 550 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X text 27 65 PARAMETERS;
 #X text 116 173 length, f 12;
 #X text 116 198 float (1-32);
@@ -30,8 +29,7 @@
 #X coords 0 1 127 0 128 128 1 0 0;
 #X restore 47 195 graph;
 #N canvas 234 234 1117 745 formulas 0;
-#X obj 250 143 expr if($f1 < 0.5 \, 4 * pow($f1 \, 3) \, 1 - pow(-2.0
-* $f1 + 2 \, 3) / 2), f 69;
+#X obj 250 143 expr if($f1 < 0.5 \, 4 * pow($f1 \, 3) \, 1 - pow(-2.0 * $f1 + 2 \, 3) / 2), f 69;
 #X obj 250 162 s \$0-value;
 #X obj 250 114 s \$0-value;
 #X obj 250 45 s \$0-value;
@@ -62,19 +60,11 @@
 #X obj 134 569 r \$0-out-bounce;
 #X obj 127 647 r \$0-out-elastic;
 #X text 364 45 formulas copied from https://easings.net/en;
-#X obj 250 191 expr if($f1 == 0 \, 0 \, if($f1 == 1 \, 1 \, if($f1
-< 0.5 \, pow(2 \, 20 * $f1 - 10) / 2 \, (2 - pow(2 \, -20 * $f1 + 10))
-/ 2))) \;, f 115;
-#X obj 250 357 expr if($f1 == 0 \, 0 \, pow(2 \, 10 * $f1 - 10)) \;
-;
-#X obj 250 521 expr if($f1 == 1 \, 1 \, 1 - pow(2 \, -10 * $f1)) \;
-;
-#X obj 250 570 expr if($f1 < 1 / 2.75 \, 7.5625 * $f1 * $f1 \, if($f1
-< 2 / 2.75 \, 7.5625 * pow($f1 - 1.5 / 2.75 \, 2) + 0.75 \, if($f1
-< 2.5 / 2.75 \, 7.5625 * pow($f1 - 2.25 / 2.75 \, 2) + 0.9375 \, 7.5625
-* pow($f1 - 2.625 / 2.75 \, 2) + 0.984375))) \;, f 97;
-#X obj 250 647 expr if($f1 == 0 \, 0 \, if($f1 == 1 \, 1 \, pow(2 \,
--10 * $f1) * sin(($f1 * 10 - 0.75) * 2.0944) + 1)) \;;
+#X obj 250 191 expr if($f1 == 0 \, 0 \, if($f1 == 1 \, 1 \, if($f1 < 0.5 \, pow(2 \, 20 * $f1 - 10) / 2 \, (2 - pow(2 \, -20 * $f1 + 10)) / 2))) \;, f 115;
+#X obj 250 357 expr if($f1 == 0 \, 0 \, pow(2 \, 10 * $f1 - 10)) \;;
+#X obj 250 521 expr if($f1 == 1 \, 1 \, 1 - pow(2 \, -10 * $f1)) \;;
+#X obj 250 570 expr if($f1 < 1 / 2.75 \, 7.5625 * $f1 * $f1 \, if($f1 < 2 / 2.75 \, 7.5625 * pow($f1 - 1.5 / 2.75 \, 2) + 0.75 \, if($f1 < 2.5 / 2.75 \, 7.5625 * pow($f1 - 2.25 / 2.75 \, 2) + 0.9375 \, 7.5625 * pow($f1 - 2.625 / 2.75 \, 2) + 0.984375))) \;, f 97;
+#X obj 250 647 expr if($f1 == 0 \, 0 \, if($f1 == 1 \, 1 \, pow(2 \, -10 * $f1) * sin(($f1 * 10 - 0.75) * 2.0944) + 1)) \;;
 #X obj 80 424 r \$0-out;
 #X obj 250 261 expr 1 - cos(($f1 * 3.14159) / 2) \;;
 #X obj 250 424 expr sin(($f1 * 3.14159) / 2) \;;
@@ -119,9 +109,7 @@
 #X obj 103 250 + 1;
 #X obj 73 274 t f f;
 #X obj 73 298 / 127;
-#X msg 97 66 linear \, inout \, inout-cubic \, inout-expo \, in \,
-in-cubic \, in-expo \, out \, out-cubic \, out-expo \, out-bounce \,
-out-elastic;
+#X msg 97 66 linear \, inout \, inout-cubic \, inout-expo \, in \, in-cubic \, in-expo \, out \, out-cubic \, out-expo \, out-bounce \, out-elastic;
 #X obj 75 500 array set;
 #X obj 73 166 t b b;
 #X obj 207 234 pack symbol \$0;
@@ -205,8 +193,7 @@ out-elastic;
 #X text 235 177 (=inout-sine);
 #X text 365 177 (=in-sine);
 #X text 522 177 (=out-sine);
-#X text 45 46 The following ease modes are currently supported for
-the transition of values, f 40;
+#X text 45 46 The following ease modes are currently supported for the transition of values, f 40;
 #X restore 510 483 pd easings;
 #X text 186 372 transition single values;
 #X msg 188 399 set 1 0 500;
@@ -223,8 +210,7 @@ the transition of values, f 40;
 #X text 91 768 left outlet outputs only values >0;
 #X obj 439 628 s receive;
 #X text 436 549 run through cycle;
-#X obj 439 699 bng 31 250 50 0 empty empty empty 17 7 0 10 #e0c4fc
-#000000 #000000;
+#X obj 439 699 bng 31 250 50 0 empty empty empty 17 7 0 10 #e0c4fc #000000 #000000;
 #X obj 439 673 r done;
 #X text 558 600 2nd is callback receiver;
 #X obj 762 628 s receive;
@@ -233,8 +219,7 @@ the transition of values, f 40;
 #X msg 610 424 0.6 0.2 0.5 0.4 0.3 0.8 0.9 0;
 #X text 600 372 transition all values (ease is optional);
 #X msg 602 399 0.1 0.2 0.4 0.6 0.8 0.9 1 2000 out-bounce;
-#X obj 1 324 cnv 1 1360 2 empty empty empty 20 12 0 14 #f0f0f0 #404040
-0;
+#X obj 1 324 cnv 1 1360 2 empty empty empty 20 12 0 14 #f0f0f0 #404040 0;
 #X obj 928 451 s receive;
 #X text 925 372 go to random index;
 #X msg 928 399 random;
@@ -270,47 +255,34 @@ the transition of values, f 40;
 #X connect 10 0 8 0;
 #X connect 11 0 8 1;
 #X restore 1212 625 pd harmonics;
-#X obj 406 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040
-0;
+#X obj 406 767 cnv 15 16 16 empty empty empty 20 12 0 14 #faff00 #404040 0;
 #X text 409 766 !;
 #X obj 72 694 vsl.seq 4 -height 4 -color 324 -grid 4;
 #A saved 0 2 0 1;
-#X obj 27 635 vsl.seq 7 -color 879 -receiver receive -sender \$0-send
-;
+#X obj 27 635 vsl.seq 7 -color 879 -receiver receive -sender \$0-send;
 #A saved 0.9 0.5 0.4 0.6 0.2 0.3 0.8;
-#X obj 1180 576 vsl.seq 8 -height 3 -color navy -receiver \$0-wavecontrol
--partition 8;
+#X obj 1180 576 vsl.seq 8 -height 3 -color navy -receiver \$0-wavecontrol -partition 8;
 #A saved 1 0.5 0.333333 0.25 0.2 0.166667 0.142857 0.125;
 #X text 500 575 1st param is cycle duration;
 #X msg 439 576 run 800;
-#X text 431 758 Behind the upper square of each slider is a bang object
-to switch to this position For manipulating values \, drag from the
-lower parts of the slider., f 84;
-#X text 759 662 stumble mode will divide the set cycle duration according
-to the set values for each step. values of 0 are skipped., f 39;
+#X text 431 758 Behind the upper square of each slider is a bang object to switch to this position For manipulating values \, drag from the lower parts of the slider., f 84;
+#X text 759 662 stumble mode will divide the set cycle duration according to the set values for each step. values of 0 are skipped., f 39;
 #X text 479 699 See callback after run or stumble here., f 20;
-#X text 173 640 right inlet accepts "pos-abs" messages only to easily
-connect 2 modules., f 27;
+#X text 173 640 right inlet accepts "pos-abs" messages only to easily connect 2 modules., f 27;
 #X text 959 222 visualize partition groups, f 16;
 #X text 26 173 KEY:, f 5;
-#X text 26 198 VALUE:;
 #X text 26 222 EXAMPLE:;
-#X obj 228 280 bng 19 250 50 0 \$0-show-colors empty click\\\ to\\\ show\\\ colors
-23 10 0 12 #ffffff #000000 #000000;
-#X obj 1123 105 bng 19 250 50 0 \$0-show-examples empty click\\\ for\\\ examples
-23 10 0 12 #ffffff #000000 #000000;
+#X obj 228 280 bng 19 250 50 0 \$0-show-colors \$0_ click\ to\ show\ colors 23 10 0 12 #ffffff #000000 #000000;
+#X obj 1123 105 bng 19 250 50 0 \$0-show-examples \$0_ click\ for\ examples 23 10 0 12 #ffffff #000000 #000000;
 #X msg 762 576 stumble -2000;
 #X text 863 575 cycle backwards via negative duration;
-#X text 926 474 will jump to position based on weighted value probability.
-, f 23;
+#X text 926 474 will jump to position based on weighted value probability., f 23;
 #X obj 1123 498 s receive;
 #X msg 1123 399 permute 1 2 3 4 5 6 0;
 #X text 1131 420 either by list of indices;
 #X text 1192 442 or randomly;
-#X obj 1 1 cnv 15 1360 48 empty empty empty 20 12 0 14 #f0f0f0 #404040
-0;
-#X text 25 15 vsl.seq : sequencer with step velocities and multiple
-input/output/manipulation options, f 89;
+#X obj 1 1 cnv 15 1360 48 empty empty empty 20 12 0 14 #f0f0f0 #404040 0;
+#X text 25 15 vsl.seq : sequencer with step velocities and multiple input/output/manipulation options, f 89;
 #N canvas 575 267 803 641 helpers 0;
 #X obj 93 191 pdcontrol;
 #X msg 93 164 dir;
@@ -390,10 +362,8 @@ input/output/manipulation options, f 89;
 #X msg 1131 443 shuffle;
 #X msg 1019 399 seed 42;
 #X text 1015 420 seed randoms;
-#X text 26 128 length can also be set by just providing a number without
-a key for convenience., f 82;
-#X text 26 107 You can initialize the following parameters via -<key>
-<value>., f 64;
+#X text 26 128 length can also be set by just providing a number without a key for convenience., f 82;
+#X text 26 107 You can initialize the following parameters via -<key> <value>., f 64;
 #X text 564 222 rasterizes scale outputs to ints, f 16;
 #X obj 835 280 print sent messages;
 #X text 708 173 receiver, f 14;
@@ -417,12 +387,13 @@ a key for convenience., f 82;
 #X text 299 523 individual step;
 #X text 226 198 float (0-999) \, hex or string;
 #X text 226 222 900 #ff0000 red;
+#X text 26 198 TYPE:;
 #X connect 0 0 60 0;
 #X connect 1 0 60 0;
 #X connect 12 0 13 0;
 #X connect 17 0 20 0;
 #X connect 18 0 20 0;
-#X connect 22 0 90 0;
+#X connect 22 0 89 0;
 #X connect 26 0 23 0;
 #X connect 27 0 23 0;
 #X connect 29 0 60 1;
@@ -437,13 +408,13 @@ a key for convenience., f 82;
 #X connect 60 1 59 1;
 #X connect 61 1 56 0;
 #X connect 63 0 38 0;
-#X connect 74 0 43 0;
-#X connect 78 0 77 0;
-#X connect 84 0 77 0;
-#X connect 85 0 50 0;
-#X connect 98 0 77 0;
-#X connect 100 0 60 0;
-#X connect 104 0 60 0;
-#X connect 105 0 38 0;
-#X connect 107 0 43 0;
-#X connect 108 0 60 0;
+#X connect 73 0 43 0;
+#X connect 77 0 76 0;
+#X connect 83 0 76 0;
+#X connect 84 0 50 0;
+#X connect 97 0 76 0;
+#X connect 99 0 60 0;
+#X connect 103 0 60 0;
+#X connect 104 0 38 0;
+#X connect 106 0 43 0;
+#X connect 107 0 60 0;
