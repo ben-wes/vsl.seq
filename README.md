@@ -5,7 +5,11 @@ See help patch for explanation and examples.
 
 Left outlet outputs step values. Right outlet outputs additional and contextual data.
 
+![vsl.seq-help.pd](vsl.seq-help.png)
+*help patch screenshot*
+
 [![vsl.seq demonstration](https://img.youtube.com/vi/0EeVjlQpY5Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=0EeVjlQpY5Y)
+*video demo (click to play)*
 
 ## Creation parameters
 * `-length <value>` from 1 to 32
