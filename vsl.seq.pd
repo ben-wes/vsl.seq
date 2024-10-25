@@ -1,4 +1,4 @@
-#N canvas 30 11 1872 1001 12;
+#N canvas 0 37 1470 891 12;
 #X obj 99 20 inlet;
 #X obj 1226 45 namecanvas \$0-this-canvas;
 #X obj 320 497 savestate;
@@ -37,7 +37,7 @@
 #X msg 918 624 pos \$1;
 #X msg 785 788 val \$1;
 #X text 109 769 set slider address;
-#N canvas 101 13 1191 987 calculate_color 0;
+#N canvas 101 37 1191 891 calculate_color 0;
 #X obj 68 47 r \$0-input-color;
 #X obj 108 851 s \$0-color-bg;
 #X obj 348 851 s \$0-color-bg-dark;
@@ -71,9 +71,6 @@
 #X obj 146 550 +;
 #X obj 108 526 * 16;
 #X obj 108 550 +;
-#X obj 348 749 * 0.9;
-#X obj 423 749 * 0.9;
-#X obj 499 749 * 0.9;
 #X obj 596 851 s \$0-color-fg;
 #X obj 596 749 * 0.5;
 #X obj 671 749 * 0.5;
@@ -86,6 +83,9 @@
 #X obj 596 785 vsl.seq-helper-rgb2hex;
 #X obj 846 785 vsl.seq-helper-rgb2hex;
 #X text 349 306 hex to decimal;
+#X obj 348 749 * 0.95;
+#X obj 423 749 * 0.95;
+#X obj 499 749 * 0.95;
 #X connect 0 0 4 0;
 #X connect 4 0 5 0;
 #X connect 5 1 21 0;
@@ -126,33 +126,33 @@
 #X connect 26 4 27 0;
 #X connect 26 5 28 1;
 #X connect 27 0 28 0;
-#X connect 28 0 35 0;
+#X connect 28 0 36 0;
 #X connect 28 0 39 0;
-#X connect 28 0 42 0;
-#X connect 28 0 43 2;
+#X connect 28 0 40 2;
+#X connect 28 0 47 0;
 #X connect 29 0 30 0;
-#X connect 30 0 34 0;
+#X connect 30 0 35 0;
 #X connect 30 0 38 0;
-#X connect 30 0 41 0;
-#X connect 30 0 43 1;
+#X connect 30 0 40 1;
+#X connect 30 0 46 0;
 #X connect 31 0 32 0;
-#X connect 32 0 33 0;
+#X connect 32 0 34 0;
 #X connect 32 0 37 0;
 #X connect 32 0 40 0;
-#X connect 32 0 43 0;
-#X connect 33 0 44 0;
-#X connect 34 0 44 1;
-#X connect 35 0 44 2;
-#X connect 37 0 45 0;
-#X connect 38 0 45 1;
-#X connect 39 0 45 2;
-#X connect 40 0 46 0;
-#X connect 41 0 46 1;
-#X connect 42 0 46 2;
-#X connect 43 0 1 0;
-#X connect 44 0 2 0;
-#X connect 45 0 36 0;
-#X connect 46 0 3 0;
+#X connect 32 0 45 0;
+#X connect 34 0 42 0;
+#X connect 35 0 42 1;
+#X connect 36 0 42 2;
+#X connect 37 0 43 0;
+#X connect 38 0 43 1;
+#X connect 39 0 43 2;
+#X connect 40 0 1 0;
+#X connect 41 0 2 0;
+#X connect 42 0 33 0;
+#X connect 43 0 3 0;
+#X connect 45 0 41 0;
+#X connect 46 0 41 1;
+#X connect 47 0 41 2;
 #X restore 354 45 pd calculate_color;
 #X text 1358 602 output duration;
 #X msg 1392 700 dur \$1;
@@ -188,8 +188,7 @@
 #X obj 296 688 list prepend;
 #X obj 296 712 list trim;
 #X text 90 212 iterate through list;
-#X text 52 330 forward first element and send back leftovers for next
-iteration cycle, f 70;
+#X text 52 330 forward first element and send back leftovers for next iteration cycle, f 70;
 #X obj 46 786 outlet;
 #X obj 46 369 route float symbol;
 #X obj 107 427 t s s s, f 39;
@@ -417,8 +416,7 @@ iteration cycle, f 70;
 #X obj 52 291 t b b b b;
 #X msg 183 589 8;
 #X obj 151 83 t b b;
-#X obj 183 209 route -length -color -height -grid -receiver -sender
--partition, f 63;
+#X obj 183 209 route -length -color -height -grid -receiver -sender -partition, f 63;
 #X obj 646 209 route float;
 #X text 645 184 float argument;
 #X obj 635 471 t f;
@@ -468,7 +466,7 @@ iteration cycle, f 70;
 #X connect 39 0 17 0;
 #X connect 40 0 18 0;
 #X restore 292 45 pd args;
-#N canvas 82 58 1793 940 draw_object 0;
+#N canvas 0 37 1470 891 draw_object 0;
 #X obj 103 275 until;
 #X obj 103 306 f;
 #X obj 136 306 + 1;
@@ -504,12 +502,10 @@ iteration cycle, f 70;
 #X obj 103 461 t f f;
 #X obj 835 651 t b l l;
 #X obj 835 810 \$0;
-#X msg 85 801 donecanvasdialog 0 0 -1 0 -1 1 1 \$1 \$2 100 100 1 \,
-dirty 0;
+#X msg 85 801 donecanvasdialog 0 0 -1 0 -1 1 1 \$1 \$2 100 100 1 \, dirty 0;
 #X obj 152 751 expr ($f1) * 16 + 1;
 #X obj 263 572 expr $f1 * 16 - 4;
-#X msg 1090 302 obj 100 100 hradio 15 1 1 \$1 \$2-radio-sender \$2-radio-receiver
-empty 0 -8 0 10 \$3 -1 -1 0, f 90;
+#X msg 1090 302 obj 100 100 hradio 15 1 1 \$1 \$2-radio-sender \$2-radio-receiver empty 0 -8 0 10 \$3 -1 -1 0, f 90;
 #X text 898 650 draw beauty;
 #X obj 103 246 t f f b;
 #X obj 332 313 sel 0;
@@ -522,17 +518,12 @@ empty 0 -8 0 10 \$3 -1 -1 0, f 90;
 #X obj 273 327 sel 0;
 #X obj 291 234 r \$0-partition-length;
 #X text 305 642 <pos> <nr> <\$0> <color> <height> <grid>;
-#X msg 124 668 obj \$1 102 vsl 15 \$5 0 \$6 0 0 \$3-\$2-vsl-sender
-\$3-\$2-vsl-receiver empty 0 -9 0 10 \$4 -1 -1 0 1, f 94;
+#X msg 124 668 obj \$1 102 vsl 15 \$5 0 \$6 0 0 \$3-\$2-vsl-sender \$3-\$2-vsl-receiver empty 0 -9 0 10 \$4 -1 -1 0 1, f 94;
 #X obj 481 512 r \$0-grid;
-#X msg 858 698 obj \$1 101 cnv 0 13 \$5 empty \$3-\$2-vsl-cnv-receiver
-empty 20 12 0 14 \$4 \$4 0, f 77;
-#X msg 881 730 obj \$1 101 cnv 13 13 \$5 empty empty empty 20 12 0
-14 \$6 \$6 0, f 61;
-#X msg 835 834 obj 101 101 cnv 0 13 0 empty \$1-vsl-mark-receiver empty
-20 12 0 14 -1 -1 0, f 75;
-#X text 451 228 use partition argument or fallback to \; 3 or 4 if
-length is multiple of these.;
+#X msg 858 698 obj \$1 101 cnv 0 13 \$5 empty \$3-\$2-vsl-cnv-receiver empty 20 12 0 14 \$4 \$4 0, f 77;
+#X msg 881 730 obj \$1 101 cnv 13 13 \$5 empty empty empty 20 12 0 14 \$6 \$6 0, f 61;
+#X msg 835 834 obj 101 101 cnv 0 13 0 empty \$1-vsl-mark-receiver empty 20 12 0 14 -1 -1 0, f 75;
+#X text 451 228 use partition argument or fallback to \; 3 or 4 if length is multiple of these.;
 #X obj 1137 454 sel 0 1;
 #X obj 223 454 sel 0 1;
 #X text 537 536 set slider range > 1 if grid set;
@@ -767,10 +758,8 @@ length is multiple of these.;
 #X obj 1519 443 r \$0-grid;
 #X obj 566 471 expr if($f2 > 0 \, int($f1)/$f2 \, $f1);
 #X obj 1305 467 expr if($f2 > 0 \, int($f1) \, $f1);
-#X obj 94 683 expr if($f2 > 0 \, int($f1) \, int($f1 * 100) / 100)
-;
-#X text 201 706 display grid position or only 2 decimal digits \; and
-int-value for gridded version;
+#X obj 94 683 expr if($f2 > 0 \, int($f1) \, int($f1 * 100) / 100);
+#X text 201 706 display grid position or only 2 decimal digits \; and int-value for gridded version;
 #X obj 922 540 clone 32 vsl.seq-helper-output-edited.cl;
 #X obj 922 471 swap;
 #X obj 922 496 pack;
@@ -913,8 +902,7 @@ int-value for gridded version;
 #N canvas 393 173 841 618 dyn-receive 0;
 #X obj 56 308 outlet;
 #X obj 123 169 pack s \$0;
-#X msg 123 191 clear \, obj 100 100 r \$1 \, obj 100 150 s \$2-out
-\, connect 0 0 1 0, f 62;
+#X msg 123 191 clear \, obj 100 100 r \$1 \, obj 100 150 s \$2-out \, connect 0 0 1 0, f 62;
 #X obj 56 285 r \$0-out;
 #X obj 123 213 s pd-\$0-receive;
 #N canvas 0 23 450 300 \$0-receive 0;
@@ -929,15 +917,12 @@ int-value for gridded version;
 #X connect 6 0 1 0;
 #X restore 59 118 pd dyn-receive;
 #X obj 599 548 s \$0-stumble;
-#X text 619 589 run through with "run <step_duration> <callback_receiver>"
-(default tempo if 0);
-#X text 695 541 stumble through with weighted steps "stumble <total_duration>"
-;
+#X text 619 589 run through with "run <step_duration> <callback_receiver>" (default tempo if 0);
+#X text 695 541 stumble through with weighted steps "stumble <total_duration>";
 #X obj 647 474 array sum \$0-seq;
 #X obj 647 498 s \$0-sum;
 #X obj 351 279 s \$0-set-ramped-sequence;
-#X text 356 241 set sequence with ramp \; "<val 1> .. <val n> <ramp_time>
-<ease_mode>";
+#X text 356 241 set sequence with ramp \; "<val 1> .. <val n> <ramp_time> <ease_mode>";
 #X text 49 552 increase pos via bang;
 #X text 647 666 return random output via "random";
 #X text 772 474 output value sum via "sum";
@@ -951,8 +936,7 @@ int-value for gridded version;
 #X text 1114 225 output values as list;
 #X obj 1170 191 s \$0-reset;
 #X obj 503 713 s \$0-pos-abs;
-#X text 308 325 set value via \; "set <index> <value> <ramp_time> <ease_mode>"
-;
+#X text 308 325 set value via \; "set <index> <value> <ramp_time> <ease_mode>";
 #X obj 1109 159 route output reset;
 #X obj 795 406 s \$0-sort;
 #X text 869 406 sort values (asc via -1 or desc by default);
@@ -1337,8 +1321,7 @@ int-value for gridded version;
 #X obj 249 344 unpack f f;
 #X obj 249 302 spigot;
 #X obj 288 278 > 0;
-#X text 152 170 fallback to 0 duration and linear easing \; if only
-2 or 3 params given;
+#X text 152 170 fallback to 0 duration and linear easing \; if only 2 or 3 params given;
 #X text 300 303 only if grid active;
 #X obj 249 498 sel 1;
 #X obj 65 655 +;
@@ -1356,8 +1339,7 @@ int-value for gridded version;
 #X text 99 656 target value correction;
 #X text 442 612 start value correction;
 #X obj 38 594 unpack f f f s;
-#X text 361 543 handle gridded downwards ramp \; FIXME: quite ugly
-with 0.99999;
+#X text 361 543 handle gridded downwards ramp \; FIXME: quite ugly with 0.99999;
 #X obj 38 749 clone 32 vsl.seq-helper-ramp.cl;
 #X connect 0 0 1 2;
 #X connect 1 0 30 0;
@@ -1415,8 +1397,7 @@ with 0.99999;
 #X msg 327 589 symbol linear;
 #X obj 145 331 t b b;
 #X obj 84 332 t b s;
-#X text 192 334 if no ease-mode found \, proceed with previous list
-and set linear easing, f 37;
+#X text 192 334 if no ease-mode found \, proceed with previous list and set linear easing, f 37;
 #X obj 84 515 t l l;
 #X obj 84 606 t l l;
 #X obj 273 656 list store;
@@ -1476,8 +1457,7 @@ and set linear easing, f 37;
 #X obj 950 909 spigot;
 #X msg 1000 909 1, f 1;
 #X obj 1018 909 t b s;
-#X text 1520 100 right inlet for absolute position only \; (to connect
-multiple sequencers easily);
+#X text 1520 100 right inlet for absolute position only \; (to connect multiple sequencers easily);
 #X text 948 958 send to defined sender name;
 #X text 749 496 receiving signal from sequencer hradio;
 #X text 1063 910 only let through if sender name is defined;
@@ -1664,8 +1644,7 @@ multiple sequencers easily);
 #X obj 1157 675 v \$0-length;
 #X obj 1116 648 t f f b;
 #X obj 1139 742 change -1;
-#X text 1427 202 TODOS \; random run and stumble via additional "random"
-param? \;;
+#X text 1427 202 TODOS \; random run and stumble via additional "random" param? \;;
 #N canvas 488 145 1026 760 permute+shuffle 0;
 #X obj 209 210 array get \$0-seq;
 #X obj 54 264 until;
@@ -1780,11 +1759,7 @@ param? \;;
 #X connect 52 1 51 0;
 #X connect 53 0 15 0;
 #X restore 1226 365 pd permute+shuffle;
-#X text 1427 301 TODOS maybe \; "normalize" option for values (0..1
-if no grid given)? \; allow min/max value setting? \; optional dyn-route?
-\; stable duration despite stumble_mode transitions? \; addon for markov
-chains \; addon for signal output? (needs output of next values) \;
-;
+#X text 1427 301 TODOS maybe \; "normalize" option for values (0..1 if no grid given)? \; allow min/max value setting? \; optional dyn-route? \; stable duration despite stumble_mode transitions? \; addon for markov chains \; addon for signal output? (needs output of next values) \;;
 #X connect 0 0 47 0;
 #X connect 2 0 16 1;
 #X connect 2 1 102 0;
