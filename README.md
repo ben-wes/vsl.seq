@@ -8,7 +8,10 @@ Left outlet outputs step values. Right outlet outputs additional and contextual 
 ![vsl.seq-help.pd](vsl.seq-help.png)
 *help patch screenshot*
 
-[![vsl.seq demonstration](https://img.youtube.com/vi/0EeVjlQpY5Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=0EeVjlQpY5Y)
+<a href="https://www.youtube.com/watch?v=0EeVjlQpY5Y">
+  <img src="https://img.youtube.com/vi/0EeVjlQpY5Y/maxresdefault.jpg" width="400" alt="vsl.seq demonstration">
+</a>
+
 *video demo (click to play)*
 
 ## Creation parameters
